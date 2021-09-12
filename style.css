@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #7ea6c0, #1526a5 );
+}
+
+.iphone-body {
+    width: 280px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 15px solid #000;
+    background-image: url('image/iphone-SE-2020-wallpaper-white-ispazio-wallpapers-central-idownloadblog.png');
+    background-repeat: no-repeat;
+    background-size: 300px 600px;
+    border-radius: 50px;
+}
+
+.notch {
+    width: 280px;
+    height: 60px;
+    background-color: #000;
+    position: absolute;
+}
+
+.speaker {
+    width: 50px;
+    height: 4px;
+    border-radius: 2px;
+    background: #000;
+    position: absolute;
+    top: 18px;
+    left: 40%;
+    box-shadow: inset #242424 0 0px 4px;
+}
+
+.camera {
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background: radial-gradient(rgba(91, 91, 112, 0.85), transparent 40%), 
+                radial-gradient(#505050,#202020 55%,#080808 70%);
+    background-position: 3px 0;
+    position: absolute;
+    top: 16px;
+    left: 30%;
+}
+
+.glare {
+    position: absolute;
+    top: -1px;
+    left: -10%;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05),
+                15px 25px 10px rgba(0, 0, 0, 0.01),
+                15px 20px 20px rgba(0, 0, 0, 0.05),
+                inset -10px -10px 15px rgba(255, 255, 255, 0.1);
+}
+
+.glare:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    background: #A9A9A9;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%
+}
+
+.glare:after {
+    content: '';
+    position: absolute;
+    top: 5.5px;
+    left: 6px;
+    background: #D0D0D0;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%
+}
+
+.time {
+    color: #fff;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: lighter;
+    position: absolute;
+    top: 110px;
+    left: 28%;
+}
+
+.date {
+    color: #fff;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 174px;
+    left: 24%;
+}
+
+.battery {
+    color: #fff;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+    font-size: 11px;
+    position: absolute;
+    top: 62px;
+    left: 228px;
+}
+
+.battery > div:last-child {
+    width: 20px;
+    height: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 3px;
+    left: 23px;
+    border-radius: 3px;
+} 
+
+.battery div div:first-child {
+    width: 16px;
+    height: 6px;
+    background: #fff;
+    position: absolute;
+    border-radius: 1px;
+    top: 1px;
+    left: 1px;
+}
+.battery div div:last-child {
+    width: 1px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    left: 22px;
+    top: 3px;
+    border-radius: 0 2px 2px 0;
+}
