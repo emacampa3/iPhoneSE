@@ -7,7 +7,7 @@
 .main {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(45deg, #7ea6c0, #1526a5 );
+    background: linear-gradient(45deg, #99c9e9, #392974 );
 }
 
 .iphone-body {
@@ -22,7 +22,8 @@
     background-repeat: no-repeat;
     background-size: 300px 600px;
     border-radius: 49px;
-    box-shadow: inset #000 0 0 0 1px, rgb(65, 64, 64) 0px 0 3px 0px, rgb(24, 24, 24) -3px 2px, #0e2041 -10px 10px 50px;
+    box-shadow: inset #000 0 0 0 1px, rgb(42, 32, 58) 0px 0 3px 0px, rgb(24, 24, 24) -3px 2px, #162b52 -20px 20px 50px;
+    
 }
 
 .shadow {
