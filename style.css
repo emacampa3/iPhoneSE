@@ -23,7 +23,6 @@
     background-size: 300px 600px;
     border-radius: 49px;
     box-shadow: inset #000 0 0 0 1px, rgb(42, 32, 58) 0px 0 3px 0px, rgb(24, 24, 24) -3px 2px, #162b52 -20px 20px 50px;
-    
 }
 
 .shadow {
@@ -32,6 +31,19 @@
     position: absolute;
     background-image: linear-gradient(-27deg,#444,#000 10%, #000 42%, #333, #000 57%, #000 91%, #444);
     opacity: 0.3;
+}
+
+.shade {
+	position: absolute;
+	left: -9px;
+	top: -7px;
+	width: 296px;
+	height: 616px;
+    border-radius: 40px;
+	border-bottom: none;
+	opacity: 0.075;
+    z-index: 1;
+    box-shadow: inset #ededed 0 0 12px 12px;
 }
 
 .notch {
@@ -59,7 +71,7 @@
     left: 115px;
 }
 .home div {
-    background: #080808;
+    background: #000;
     border-radius: 50%;
     width: 46px;
     height: 46px;
