@@ -21,7 +21,16 @@
     background-image: url('image/iphone-SE-2020-wallpaper-white-ispazio-wallpapers-central-idownloadblog.png');
     background-repeat: no-repeat;
     background-size: 300px 600px;
-    border-radius: 50px;
+    border-radius: 49px;
+    box-shadow: inset #000 0 0 0 1px, rgb(65, 64, 64) 0px 0 3px 0px, rgb(24, 24, 24) -3px 2px, #0e2041 -10px 10px 50px;
+}
+
+.shadow {
+    width: 280px;
+    height: 540px;
+    position: absolute;
+    background-image: linear-gradient(-27deg,#444,#000 10%, #000 42%, #333, #000 57%, #000 91%, #444);
+    opacity: 0.3;
 }
 
 .notch {
@@ -38,6 +47,25 @@
     position: absolute;
     top: 540px;
 }
+
+.home {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(32deg,#303030,#080808,#101010);
+    top: 12px;
+    left: 115px;
+}
+.home div {
+    background: #080808;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+}  
 
 .speaker {
     width: 50px;
@@ -97,14 +125,13 @@
     height: 1px;
     border-radius: 50%
 }
-
+ 
 .time {
     color: #fff;
     font-family: 'Heebo', sans-serif;
-    font-weight: bolder;
+    font-weight: 200;
     letter-spacing: 2px;
     font-size: 50px;
-    font-weight: lighter;
     position: absolute;
     top: 110px;
     left: 28%;
@@ -257,7 +284,7 @@
     height: 2px;
     border-radius: 50%;
     background-color: rgba(211, 211, 211, 1);
-    border: 1px solid #7ac6db;
+    border: 1px solid #5f95a3;
     top: 1px;
     left: 2px;
 }
@@ -277,7 +304,7 @@
     width: 1px;
     height: 1px;
     border-radius: 50%;
-    background-color: #7ac6db;
+    background-color: #5f95a3;
     top: 1px;
     left: 6px;
 }
