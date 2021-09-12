@@ -90,7 +90,7 @@
     position: absolute;
     top: 18px;
     left: 41%;
-    box-shadow: inset #242424 0 0px 4px;
+    box-shadow: inset #242424 0 0 4px;
     z-index: 10;
 }
 
@@ -142,7 +142,116 @@
     height: 1px;
     border-radius: 50%
 }
- 
+
+.volume {
+    border-radius: 10px;
+    position: absolute;
+    background: #080808;
+    top: 130px;
+    left: -20px;
+    transform: rotateY(-60deg);
+    transform-style: preserve-3d;
+    box-shadow: inset #292A2F 4px 0 8px 1px, #181818 -1px 0px 2px;
+}
+
+.volume div {
+    width: 8px;
+    height: 44px;
+    background: #101010;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: #181818 1px 1px, #101010 1px 1px,  #080808 3px 3px, inset #101010 3px 0 3px;
+}
+  
+.volume div:first-child {
+    top: 2px;
+    left: -2px;
+}
+
+.volume div:last-child {
+    top: 60px;
+    left: -2px;
+}
+
+.off-on-button {
+    border-radius: 10px;
+    position: absolute;
+    background: #181818;
+    top: 130px;
+    left: 298px;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    box-shadow: inset #292A2F 4px 0 8px 1px, #101010 1px 0px 2px;
+}
+
+.off-on-button div {
+    width: 4px;
+    height: 44px;
+    background: #101010;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: #181818 1px 1px, #101010 1px 1px,  #080808 3px 3px, inset #101010 3px 0 3px;
+}
+
+.upper-left-toggler {
+    height: 4px;
+    width: 6px;
+    position: absolute;
+    background: #080808;
+    top: 40px;
+    left: -19px;
+    transform: rotateY(65deg);
+    transform-style: preserve-3d;
+    box-shadow: inset #303030 4px 0 8px 1px, #303030 -1px 0px 2px;
+}
+
+.upper-left-toggler div {
+    width: 8px;
+    height: 26px;
+    background: #101010;
+    border-radius: 10px;
+    position: absolute;
+    top: 26px;
+    left: -8px;
+    box-shadow: #181818 1px 1px, #101010 1px 1px,  #080808 3px 3px, inset #101010 3px 0 3px;
+}
+
+.upper-right-line {
+    height: 4px;
+    width: 4px;
+    position: absolute;
+    background: #080808;
+    top: 40px;
+    left: 291px;
+    transform: rotateY(65deg);
+    transform-style: preserve-3d;
+    box-shadow: inset #202020 0 0 8px 1px, #202020 1px 0 2px;
+}
+
+.lower-left-line {
+    height: 4px;
+    width: 6px;
+    position: absolute;
+    background: #080808;
+    top: 560px;
+    left: -19px;
+    transform: rotateY(65deg);
+    transform-style: preserve-3d;
+    box-shadow: inset #303030 0 0 8px 1px, #303030 1px 0 2px;
+}
+
+.lower-right-line {
+    height: 4px;
+    width: 4px;
+    position: absolute;
+    background: #080808;
+    top: 560px;
+    left: 291px;
+    transform: rotateY(65deg);
+    transform-style: preserve-3d;
+    box-shadow: inset #202020 0px 0 8px 1px, #202020 1px 0px 2px;
+}
+  
 .time {
     color: #fff;
     font-family: 'Heebo', sans-serif;
