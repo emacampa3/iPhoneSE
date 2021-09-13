@@ -292,31 +292,84 @@ html, body {
     width: 260px;
     height: 60px;
     background: rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
+    border-radius: 8px;
+}
+
+.message {
+    position: absolute;
+    top: 220px;
+    left: 16px;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+	background : linear-gradient(#66ca3b 0%, #07bf38 100%);
+}
+
+.message div {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.message:before {
+	position: absolute;
+	content: '';
+	width: 10px;
+	height: 10px;
+	top: 39px;
+	left: 39px;
+	margin: -37px 0 0 -37px;
+	background: #fff;
+	border-radius: 50%;
+	transform: scaleY(0.85);
+}
+
+.message:after {
+	position: absolute;
+	content: '';
+    top: 10px;
+	left: 1px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white transparent transparent transparent;
+	transform: rotateZ(35deg) scaleX(0.5) scaleY(1.6); 
 }
 
 .notification div:nth-child(2) {
     position: absolute;
+    color: #212426;
     font-family: 'Heebo', sans-serif;
-    font-weight: 100;
-    font-size: 9px;
-    top: 8px;
-    left: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    top: 20px;
+    left: 7px;
 }
 
 .notification div:nth-child(3) {
     position: absolute;
+    color: #45505c;
     font-family: 'Heebo', sans-serif;
+    font-weight: 200;
+    font-size: 8px;
+    top: 7px;
+    left: 24px;
+}
+
+.notification div:nth-child(4) {
+    position: absolute;
+    font-family: 'Heebo', sans-serif;
+    color: #212426;
     font-weight: 200;
     font-size: 11px;
     top: 36px;
-    left: 10px;
+    left: 7px;
     white-space: nowrap;
 }
 
 .notification div:last-child {
     position: absolute;
     font-family: 'Heebo', sans-serif;
+    color: #45505c;
     font-weight: 200;
     font-size: 9px;
     top: 8px;
