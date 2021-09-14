@@ -260,27 +260,48 @@ html, body {
     box-shadow: inset #202020 0px 0 8px 1px, #202020 1px 0px 2px;
 }
 
-#clock {
+.clock {
     color: #fff;
     font-family: 'Heebo', sans-serif;
     font-weight: 200;
-    font-size: 50px;
+    font-size: 48px;
     position: absolute;
-    top: 110px;
-    left: 28%;
+    margin-left: 81px;
+    margin-top: 110px;
     z-index: 2;
 }
 
-.date {
-    color: #fff;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 100;
+.clock-text {
+    display: flex;
+    justify-content: center;
     letter-spacing: 1px;
+}
+  
+.clock-text-hour, 
+.clock-text-minutes {
+    font-size: 50px;
+    font-weight: 200;
+    white-space: nowrap;
+}
+  
+.clock-date {
+    font-weight: 100;
     position: absolute;
-    top: 174px;
-    left: 24%;
+    top: 64px;
+    left: -20px;
+    z-index: 2;
+    font-size: 15px;
+    white-space: nowrap;
 }
 
+#date-day-week {
+    margin-right: 1px;
+}
+
+#date-day {
+    margin-right: 4px;
+}
+  
 .notification {
     position: absolute;
     top: 215px;
