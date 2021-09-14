@@ -1,2 +1,2 @@
-# iPhoneSE
-First attempt at pure CSS iPhone SE design
+# iPhone SE
+My first attempt at pure CSS iPhone design
