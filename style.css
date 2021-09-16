@@ -27,7 +27,7 @@ html, body {
     border: 15px solid #000;
     background-image: url('image/iphone-SE-2020-wallpaper-white-ispazio-wallpapers-central-idownloadblog.png');
     background-repeat: no-repeat;
-    background-size: 300px 600px;
+    background-size: 280px 600px;
     border-radius: 49px;
     box-shadow: inset #000 0 0 0 1px, rgb(42, 32, 58) 0px 0 3px 0px, rgb(24, 24, 24) -3px 2px, #162b52 -20px 20px 50px;
 }
@@ -42,11 +42,12 @@ html, body {
 
 .shade {
 	position: absolute;
-	left: -9px;
-	top: -7px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 	width: 296px;
 	height: 616px;
-    border-radius: 40px;
+    border-radius: 42px;
 	border-bottom: none;
 	opacity: 0.075;
     z-index: 1;
@@ -74,8 +75,9 @@ html, body {
     height: 52px;
     border-radius: 50%;
     background: linear-gradient(32deg,#303030,#080808,#101010);
-    top: 12px;
-    left: 115px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
 }
 
@@ -85,8 +87,9 @@ html, body {
     width: 46px;
     height: 46px;
     position: absolute;
-    left: 3px;
-    top: 3px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
 }  
 
@@ -96,8 +99,9 @@ html, body {
     border-radius: 2px;
     background: #000;
     position: absolute;
-    top: 18px;
-    left: 41%;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     box-shadow: inset #242424 0 0 4px;
     z-index: 2;
 }
@@ -110,15 +114,16 @@ html, body {
                 radial-gradient(#505050,#202020 55%,#080808 70%);
     background-position: 3px 0;
     position: absolute;
-    top: 16px;
+    top: 29%;
     left: 32%;
     z-index: 2;
 }
 
 .glare {
     position: absolute;
-    top: -1px;
-    left: -10%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 10px;
     height: 10px;
     background: transparent;
@@ -132,8 +137,9 @@ html, body {
 .glare:before {
     content: '';
     position: absolute;
-    top: 3px;
-    left: 6px;
+    top: 38%;
+    left: 70%;
+    transform: translate(-50%, -50%);
     background: #A9A9A9;
     width: 2px;
     height: 2px;
@@ -143,8 +149,9 @@ html, body {
 .glare:after {
     content: '';
     position: absolute;
-    top: 5.5px;
-    left: 6px;
+    top: 56%;
+    left: 64%;
+    transform: translate(-50%, -50%);
     background: #D0D0D0;
     width: 1px;
     height: 1px;
@@ -155,8 +162,8 @@ html, body {
     border-radius: 10px;
     position: absolute;
     background: #080808;
-    top: 130px;
-    left: -20px;
+    top: 19%;
+    left: -7%;
     transform: rotateY(-60deg);
     transform-style: preserve-3d;
     box-shadow: inset #292A2F 4px 0 8px 1px, #181818 -1px 0px 2px;
@@ -185,8 +192,8 @@ html, body {
     border-radius: 10px;
     position: absolute;
     background: #181818;
-    top: 130px;
-    left: 298px;
+    top: 20%;
+    left: 106%;
     transform: rotateY(180deg);
     transform-style: preserve-3d;
     box-shadow: inset #292A2F 4px 0 8px 1px, #101010 1px 0px 2px;
@@ -266,8 +273,9 @@ html, body {
     font-weight: 200;
     font-size: 48px;
     position: absolute;
-    margin-left: 81px;
-    margin-top: 110px;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
 }
 
@@ -287,8 +295,9 @@ html, body {
 .clock-date {
     font-weight: 100;
     position: absolute;
-    top: 64px;
-    left: -20px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 2;
     font-size: 15px;
     white-space: nowrap;
@@ -403,8 +412,9 @@ html, body {
     font-weight: 200;
     font-size: 11px;
     position: absolute;
-    top: 62px;
-    left: 228px;
+    top: 12%;
+    left: 85%;
+    transform: translate(-50%, -50%);
 }
 
 .battery > div:last-child {
@@ -412,8 +422,9 @@ html, body {
     height: 8px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     position: absolute;
-    top: 3px;
-    left: 23px;
+    top: 50%;
+    left: 172%;
+    transform: translate(-50%, -50%);
     border-radius: 3px;
 } 
 
@@ -440,7 +451,8 @@ html, body {
     color: #fff;
     position: absolute;
     top: 62px;
-    left: 201px;
+    left: 71%;
+    transform: translate(-50%, -50%);
 }
 
 .lock div:first-child {
@@ -469,13 +481,13 @@ html, body {
     font-size: 11px;
     position: absolute;
     top: 62px;
-    left: 6px;
+    left: 2%;
 }
 
 .wifi {
     position: absolute;
     top: 65px;
-    left: 45px;
+    left: 16%;
     padding: 4px;
     border: 4px double transparent;
     border-top-color: white;
@@ -499,8 +511,11 @@ html, body {
 
 .slide {
     position: absolute;
-    top: 500px;
-    left: 27%;
+/*     top: 500px;
+    left: 27%; */
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
     font-family: 'Heebo', sans-serif;
     font-size: 13px;
@@ -514,7 +529,7 @@ html, body {
     background-color: #fff;
     color: #fff;
     border-radius: 50%;
-    top: 528px;
+    top: 88%;
     left: 47%;
 }
 
@@ -524,7 +539,7 @@ html, body {
     height: 6px;
     background: rgba(211, 211, 211, 1);
     border-radius: 1px;
-    top: 528px;
+    top: 88%;
     left: 51%;
 }
 
