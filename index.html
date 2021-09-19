@@ -8,93 +8,98 @@
     <title>iPhone SE</title>
 </head>
 <body>
-    <div class="main">
-        <div class="iphone-body">
-            
-            <div class="shadow">
+    
+    <div class="toggle">
+        <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+    </div>
+
+
+    <div class="iphone-body">
+        
+        <div class="shadow">
+            <div></div>
+        </div>
+
+        <div class="shade"></div>
+        
+        <div class="notch">
+            <div class="speaker"></div>
+            <div class="camera">
+                <div class="glare"></div>
+            </div>
+        </div>
+
+        <div class="off-on-button">
+            <div></div>
+        </div>
+
+        <div class="upper-left-toggler">
+            <div></div>
+        </div>
+        <div class="upper-right-line"></div>
+        <div class="lower-left-line"></div>
+        <div class="lower-right-line"></div>
+
+        <div class="volume">
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="sim">No SIM</div>
+        <div class="wifi"></div>
+        <div class="lock">
+            <div></div>
+            <div></div>
+        </div>
+        <div class="battery">
+            <div>86%</div>
+            <div>
+                <div></div>
                 <div></div>
             </div>
+        </div>
 
-            <div class="shade"></div>
-            
-            <div class="notch">
-                <div class="speaker"></div>
-                <div class="camera">
-                    <div class="glare"></div>
-                </div>
+        <div class="clock">
+            <div class="clock-text">
+                <div class="clock-text-hour" id="text-hour">...</div>
+                <div class="clock-text-minutes" id="text-minutes"></div>
             </div>
 
-            <div class="off-on-button">
-                <div></div>
+            <div class="clock-date">
+                <span id="date-day-week"></span>
+                <span id="date-day"></span>
+                <span id="date-month"></span>
             </div>
+        </div>
+        
+        <div class="notification">
+            <div></div>
+            <div>Branko</div>
+            <div>MESSAGES</div>
+            <div>Let's have lunch tomorrow!</div>
+            <div>now</div>
+        </div>
 
-            <div class="upper-left-toggler">
-                <div></div>
-            </div>
-            <div class="upper-right-line"></div>
-            <div class="lower-left-line"></div>
-            <div class="lower-right-line"></div>
+        <div class="message">
+            <div></div>
+        </div>
 
-            <div class="volume">
-                <div></div>
-                <div></div>
-            </div>
-
-            <div class="sim">No SIM</div>
-            <div class="wifi"></div>
-            <div class="lock">
-                <div></div>
-                <div></div>
-            </div>
-            <div class="battery">
-                <div>86%</div>
-                <div>
-                  <div></div>
-                  <div></div>
-                </div>
-            </div>
-
-            <div class="clock">
-                <div class="clock-text">
-                    <div class="clock-text-hour" id="text-hour"></div>
-                    <div class="clock-text-minutes" id="text-minutes"></div>
-                </div>
-
-                <div class="clock-date">
-                    <span id="date-day-week"></span>
-                    <span id="date-day"></span>
-                    <span id="date-month"></span>
-                </div>
-            </div>
-            
-            <div class="notification">
-                <div></div>
-                <div>Branko</div>
-                <div>MESSAGES</div>
-                <div>Let's have lunch tomorrow!</div>
-                <div>now</div>
-            </div>
-
-            <div class="message">
-                <div></div>
-            </div>
-
-            <div class="slide">Press Home to unlock</div>
+        <div class="slide">Press Home to unlock</div>
+        <div class="dot"></div>
+        <div class="camera-icon">
+            <div class="lens"></div>
+            <div class="button"></div>
             <div class="dot"></div>
-            <div class="camera-icon">
-                <div class="lens"></div>
-                <div class="button"></div>
-                <div class="dot"></div>
-            </div>
+        </div>
 
-            <div class="lower-notch">
-                <div class="shade-lower"></div>
-                <div class="home">
-                    <div></div>
-                </div>
+        <div class="lower-notch">
+            <div class="shade-lower"></div>
+            <div class="home">
+                <div></div>
             </div>
         </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>

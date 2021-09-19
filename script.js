@@ -36,3 +36,24 @@ const clockText = () =>{
     dateMonth.innerHTML = `${months[month]}`
 }
 setInterval(clockText, 1000)
+
+
+/* dark & light theme */
+const checkbox = document.querySelector('input[name=theme]');
+
+checkbox.addEventListener('change', function() {
+    if(this.checked) {
+        trans()
+        document.documentElement.setAttribute('data-theme', 'dark')
+    } else {
+        trans()
+        document.documentElement.setAttribute('data-theme', 'light')
+    }
+})
+
+let trans = () => {
+    document.documentElement.classList.add('transition');
+    window.setTimeout(() => {
+        document.documentElement.classList.remove('transition')
+    }, 10)
+}
