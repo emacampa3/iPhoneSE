@@ -8,10 +8,29 @@
     <title>iPhone SE</title>
 </head>
 <body>
-    
-    <div class="toggle">
-        <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
-    </div>
+
+    <div class="container">
+        <div class="title">Customize</div>
+            <form action="#">
+            <div class="user-input">
+
+                <div class="input-box">
+                    <span class="details">Message</span>
+                    <input type="text" placeholder="Enter your message" required>
+                </div>
+
+                <div class="toggle">
+                    <span class="dark-light-theme">Appearance (Light/Dark)</span>
+                    <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+                </div>
+                
+            </div>
+            
+            <div class="button">
+                <input type="submit" value="Apply your choices">
+            </div>
+            </form>
+      </div>
 
 
     <div class="iphone-body">
@@ -51,7 +70,8 @@
             <div></div>
             <div></div>
         </div>
-        <div class="battery">
+
+        <div id="battery">
             <div>86%</div>
             <div>
                 <div></div>
