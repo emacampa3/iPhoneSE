@@ -5,7 +5,7 @@ const textHour = document.getElementById('text-hour'),
       dateDay = document.getElementById('date-day'),
       dateMonth = document.getElementById('date-month')
 
-const clockText = () =>{
+const clockText = () => {
     let date = new Date()
 
     let hh = date.getHours(),
@@ -57,3 +57,11 @@ let trans = () => {
         document.documentElement.classList.remove('transition')
     }, 10)
 }
+
+
+/* battery percentage */
+/* function batteryPercentage() {
+    document.getElementById('battery').innerHTML = Math.floor(Math.random() * 100) + 1;
+}
+
+batteryPercentage.addEventListener */
