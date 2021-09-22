@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="notification-icons.css">
     <title>iPhone SE</title>
 </head>
 <body>
@@ -71,8 +72,8 @@
             <div></div>
         </div>
 
-        <div id="battery">
-            <div>86%</div>
+        <div class="battery">
+            <div id="battery-percentage"></div>
             <div>
                 <div></div>
                 <div></div>
@@ -94,15 +95,45 @@
         
         <div class="notification">
             <div></div>
-            <div>Branko</div>
-            <div>MESSAGES</div>
-            <div>Let's have lunch tomorrow!</div>
+            <div id="sender-name">Branko</div>
+            <div id="application-name">MESSAGES</div>
+            <div id="notification-message">Let's have lunch tomorrow!</div>
             <div>now</div>
         </div>
 
-        <div class="message">
-            <div></div>
+        <!-- Different notification icons -->
+        <div class="notification-icon-messages">
+            <div id="icon"></div>
         </div>
+
+        <div class="notification-icon-missed-call">
+            <div id="icon">
+                <div class="inner-part">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="notification-icon-twitter">
+            <div id="icon"></div>
+        </div>
+
+        <!-- <div class="notification-icon-gmail">
+            <div id="icon"></div>
+        </div>
+
+        <div class="notification-icon-messenger">
+            <div id="icon"></div>
+        </div>
+
+        <div class="notification-icon-reddit">
+            <div id="icon"></div>
+        </div>
+
+        <div class="notification-icon-reminders">
+            <div id="icon"></div>
+        </div> -->
+
 
         <div class="slide">Press Home to unlock</div>
         <div class="dot"></div>
