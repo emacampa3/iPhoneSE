@@ -40,7 +40,7 @@
 } */
 
 /* Messenger Icon */
-/* .notification-icon-messenger {
+.notification-icon-messenger {
     position: absolute;
     top: 220px;
     left: 16px;
@@ -64,8 +64,8 @@
 	top: 39px;
 	left: 39px;
 	margin: -37px 0 0 -37px;
-	background : linear-gradient(#1CBFFF 0%, #106FFF 100%);
-	border-radius: 50%;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgba(35,130,254,1) 0%, rgba(35,130,254,1) 20%, rgba(168,54,245,1) 55%, rgba(253,101,108,1) 90%);
 	transform: scaleY(0.85);
 }
 
@@ -107,7 +107,7 @@
     border-width: 0 0 3px 1px;
     border-color: transparent transparent #fff transparent;
 }
- */
+
 /* Mail Icon */
 /* .notification-icon-mail {
 	position: absolute;
@@ -218,7 +218,8 @@
         -4.25px 0.95px 0 4.25px #1CA1F1;
 }
  */
-.notification-icon-facebook {
+/* Facebook Icon */
+/*.notification-icon-facebook {
     position: absolute;
     top: 220px;
     left: 16px;
@@ -258,3 +259,4 @@
     width: 6px;
     height: 2px;
 }
+/*
