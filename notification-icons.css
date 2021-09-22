@@ -6,7 +6,7 @@
     width: 14px;
     height: 14px;
     border-radius: 4px;
-	background : linear-gradient(#66ca3b 0%, #07bf38 100%);
+	background: linear-gradient(#66ca3b 0%, #07bf38 100%);
 }
 
 .notification-icon-messages div {
@@ -40,7 +40,7 @@
 } */
 
 /* Messenger Icon */
-.notification-icon-messenger {
+/* .notification-icon-messenger {
     position: absolute;
     top: 220px;
     left: 16px;
@@ -85,7 +85,7 @@
     width: 3px;
     height: 1px;
     background: #fff;
-    transform:  translate(-50%, -50%) rotate(44deg)               
+    transform:  translate(-50%, -50%) rotate(34deg);              
 }
     
 .lightning:before, 
@@ -106,7 +106,76 @@
     bottom: 0;
     border-width: 0 0 3px 1px;
     border-color: transparent transparent #fff transparent;
+} */
+
+/* Mail Icon */
+.notification-icon-mail {
+	position: absolute;
+    top: 220px;
+    left: 16px;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+	background: linear-gradient(#1a51f0 0%, #02c9df 100%); 
 }
+
+.mail {
+	position: absolute;
+	width: 8px;
+	height: 6px;
+	top: 30%;
+	left: 20%;
+	overflow: hidden;
+	border-radius: 1px;
+}
+
+.mail:before, .mail:after {
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	border-width: 3px;
+	border-style: solid; 
+}
+
+.mail:before {
+	top: 0;
+	left: 0;
+	border-color: transparent transparent transparent white; 
+}
+
+.mail:after {
+	top: 0;
+	right: 0;
+	border-color: transparent white transparent transparent; 
+}
+
+.mail .inner {
+	position: absolute; 
+}
+
+.mail .inner.upper {
+	width: 6px;
+	height: 6px;
+    top: -50%;
+    left: 22%;
+	z-index: 2;
+	background: #fff;
+    border-radius: 1px;
+	box-shadow: 0 0 0 0.5px #1ca4f7;
+	transform: rotateZ(45deg); 
+}
+
+.mail .inner.lower {
+	width: 8px;
+	height: 8px;
+    top: 70%;
+	z-index: 1;
+	background: #fff;
+	border-radius: 1px;
+	transform: rotateZ(45deg); 
+}
+
 
 /* Twitter Icon */
 /* .notification-icon-twitter {
