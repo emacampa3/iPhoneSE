@@ -1,5 +1,5 @@
 /* Messages Icon */
-/* .notification-icon-messages {
+.notification-icon-messages {
     position: absolute;
     top: 220px;
     left: 16px;
@@ -37,10 +37,10 @@
 	border-style: solid;
 	border-color: white transparent transparent transparent;
 	transform: rotateZ(35deg) scaleX(0.5) scaleY(1.6); 
-} */
+}
 
 /* Messenger Icon */
-/* .notification-icon-messenger {
+.notification-icon-messenger {
     position: absolute;
     top: 220px;
     left: 16px;
@@ -106,7 +106,7 @@
     bottom: 0;
     border-width: 0 0 3px 1px;
     border-color: transparent transparent #fff transparent;
-} */
+}
 
 /* Mail Icon */
 .notification-icon-mail {
@@ -176,9 +176,8 @@
 	transform: rotateZ(45deg); 
 }
 
-
 /* Twitter Icon */
-/* .notification-icon-twitter {
+.notification-icon-twitter {
     position: absolute;
     top: 220px;
     left: 16px;
@@ -218,9 +217,9 @@
         -8.275px -6.575px 0 2.775px #fff,
         -4.25px 0.95px 0 4.25px #1CA1F1;
 }
- */
+
 /* Missed call Icon */
-/* .notification-icon-missed-call {
+.notification-icon-missed-call {
     position: absolute;
     top: 220px;
     left: 16px;
@@ -285,5 +284,3 @@
     transform: rotate(0deg);
 	background: #66ca3b;
 }
-
- */
