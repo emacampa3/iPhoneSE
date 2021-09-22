@@ -1,3 +1,6 @@
+/* random battery percentage (between 60 and 90) */
+const batteryPercentage = document.querySelector('#battery-percentage').innerHTML = `${Math.floor(Math.random() * 31) + 60}%`
+
 /* clock and date text */
 const textHour = document.getElementById('text-hour'),
       textMinutes = document.getElementById('text-minutes'),
@@ -39,7 +42,7 @@ setInterval(clockText, 1000)
 
 
 /* dark & light theme */
-const checkbox = document.querySelector('input[name=theme]');
+/* const checkbox = document.querySelector('input[name=theme]');
 
 checkbox.addEventListener('change', function() {
     if(this.checked) {
@@ -56,12 +59,4 @@ let trans = () => {
     window.setTimeout(() => {
         document.documentElement.classList.remove('transition')
     }, 10)
-}
-
-
-/* battery percentage */
-/* function batteryPercentage() {
-    document.getElementById('battery').innerHTML = Math.floor(Math.random() * 100) + 1;
-}
-
-batteryPercentage.addEventListener */
+} */
