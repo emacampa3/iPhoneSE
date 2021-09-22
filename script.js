@@ -1,5 +1,5 @@
 /* random battery percentage (between 60 and 90) */
-const batteryPercentage = document.querySelector('#battery-percentage').innerHTML = `${Math.floor(Math.random() * 31) + 60}%`
+const batteryPercentage = document.querySelector('#battery-percentage').innerHTML = `${Math.floor(Math.random() * 29) + 70}%`
 
 /* clock and date text */
 const textHour = document.getElementById('text-hour'),
