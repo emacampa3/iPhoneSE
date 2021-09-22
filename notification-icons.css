@@ -1,0 +1,151 @@
+/* Messages Icon */
+/* .notification-icon-messages {
+    position: absolute;
+    top: 220px;
+    left: 16px;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+	background : linear-gradient(#66ca3b 0%, #07bf38 100%);
+}
+
+.notification-icon-messages div {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+
+.notification-icon-messages:before {
+	position: absolute;
+	content: '';
+	width: 10px;
+	height: 10px;
+	top: 39px;
+	left: 39px;
+	margin: -37px 0 0 -37px;
+	background: #fff;
+	border-radius: 50%;
+	transform: scaleY(0.85);
+}
+
+.notification-icon-messages:after {
+	position: absolute;
+	content: '';
+    top: 10px;
+	left: 1px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: white transparent transparent transparent;
+	transform: rotateZ(35deg) scaleX(0.5) scaleY(1.6); 
+} */
+
+/* Twitter Icon */
+.notification-icon-twitter {
+    position: absolute;
+    top: 220px;
+    left: 16px;
+    width: 14px;
+    height: 14px;
+    overflow: hidden;
+    border-radius: 4px;
+	background : #fff;
+}
+
+.notification-icon-twitter div {
+    position: absolute;
+}
+
+.notification-icon-twitter:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 5px;
+    width: 5px;
+    margin-top:-5px;
+    border-radius: 50%;
+    background-color: #1CA1F1;
+    box-shadow:
+        1.1px -6.05px 0 1.85px #fff,
+        1.0px -2.9px 0 -0.15px #1CA1F1,
+        1.975px -5.35px 0 1.84px #fff,
+        1.2px -2.2px 0 -0.125px #1CA1F1,
+        -2.1px -6.7px 0 4.75px #fff,
+        -5px -0.9px 0 0.07px #1CA1F1,
+        -7.2px -1.35px 0 0.07px #fff,
+        -5px 1px 0 0.04px #1CA1F1,
+        -6.8px 1.1px 0 0.07px #fff,
+        -4.3px 2.8px 0 0.07px #1CA1F1,
+        -8.3px 1.175px 0 2.775px #fff,
+        -8.275px -6.575px 0 2.775px #fff,
+        -4.25px 0.95px 0 4.25px #1CA1F1;
+}
+
+/* Missed call Icon */
+/* .notification-icon-missed-call {
+    position: absolute;
+    top: 220px;
+    left: 16px;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+	background : linear-gradient(#66ca3b 0%, #07bf38 100%);
+}
+
+.notification-icon-missed-call div {
+	position: absolute;
+	width: 5px;
+	height: 2px;
+	transform: rotateZ(40deg); 
+}
+
+.notification-icon-missed-call div:before {
+	position: absolute;
+	content: '';
+	width: 7px;
+	height: 3px;
+	top: 0px;
+	left: 7px;
+	z-index: 3;
+    transform: rotate(180deg);
+	border-radius: 2px 2px 0 0;
+	background : linear-gradient(#66ca3b 0%, #0ec940 100%);
+}
+
+.inner-part:before {
+    position: absolute;
+	content: '';
+	top: 2px;
+    left: 5px;
+	width: 6px;
+	height: 2px;
+	border-radius: 4px;
+	background: #fff;
+	transform: rotateZ(20deg); 
+}
+
+.inner-part:after {
+    position: absolute;
+	content: '';
+	top: 2px;
+    left: 10px;
+	width: 6px;
+	height: 2px;
+	border-radius: 4px;
+	background: #fff;
+	transform: rotateZ(-20deg); 
+}
+
+.circle {
+    position: absolute;
+	width: 6px;
+	height: 4px;
+	top: -80%;
+	left: 100%;
+    border: 2px solid #fff;
+	border-radius: 4px;
+    transform: rotate(0deg);
+	background: #66ca3b;
+}
+
+ */
