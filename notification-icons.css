@@ -259,3 +259,75 @@
     width: 6px;
     height: 2px;
 }
+
+/* Calendar Icon */
+.notification-icon-calendar {
+    position: absolute;
+    top: 220px;
+    left: 16px;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+	background: #fff;
+}
+
+#calendar-day-week {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #EC7063;
+    font-size: 3px;
+    font-weight: 400;
+    font-family: 'Heebo', sans-serif;
+}
+
+#calendar-day {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 200;
+}
+
+/* <div class="calendar-date">
+                <span id="calendar-day-week"></span>
+                <span id="calendar-day"></span>
+            </div> */
+
+/* .clock-date {
+    color: #fff;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 100;
+    font-size: 4px;
+    position: absolute;
+    z-index: 2;
+}
+
+.clock-text {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+  
+  
+.clock-date {
+    font-weight: 100;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+#date-day-week {
+    margin-right: 2px;
+}
+
+#date-day {
+    margin-right: 2px;
+} */
