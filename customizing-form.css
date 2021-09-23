@@ -12,37 +12,23 @@
 }
 
 .container .title {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: 400;
     position: relative;
 }
 
-.container .title::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 1px;
-    width: 60px;
-    border-radius: 5px;
-    background: linear-gradient(#e6e6e6, #4e3e87);
-}
-
 .user-input {
-    margin: 20px 0;
-}
-
-.details {
+    margin: 15px 0;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 13px;
 }
 
-.input-box input {
+.sender input {
     margin-top: 4px;
-    height: 30px;
+    height: 25px;
     width: 94%;
     border-radius: 5px;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 100;
     padding-left: 10px;
     outline: none;
@@ -50,6 +36,20 @@
     border: 1px solid #d0d0d0;
 }
 
+.message input {
+    margin-top: 4px;
+    height: 25px;
+    width: 94%;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 100;
+    padding-left: 10px;
+    outline: none;
+    background-color: #F0F0F0;
+    border: 1px solid #d0d0d0;
+}
+
+/* Toggle */
 input[type=checkbox] {
 	height: 0;
 	width: 0;
@@ -66,7 +66,7 @@ label {
     border: 1px solid rgba(255, 255, 255, 0.2);
 	border-radius: 100px;
 	position: absolute;
-    top: 30%;
+    top: 40%;
     left: 73%;
 }
 
@@ -93,33 +93,38 @@ input:checked + label:after {
 
 .dark-light-theme{
     position: absolute;
-    top: 30%;
-    font-size: 14px;
-    font-weight: 200;
+    top: 40%;
 }
 
-form .button {
+.button {
     position: absolute;
+    color: #fff;
     top: 86%;
+    left: 10%;
     height: 45px;
-    width: 78%;
+    width: 80%;
+    border: none;
 }
 
 .button input {
-    background: #8a7cb8;
-    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #353535;
     height: 100%;
     width: 100%;
-    padding: 10px 15px;
-    border-radius: 5px;
-    border: none;
     font-size: 15px;
-    font-weight: 400;
     letter-spacing: 1px;
+    font-weight: 400;
+    color: #353535;
     cursor: pointer;
-    transition: 0.2s linear;
+    transition: 0.18s linear;
+}
+
+.button input:hover {
+    background-color: #9c8fc7;
+    color: #fff;
+    border: none;
 }
 
 .button input:active {
-  transform: scale(0.92);
+  transform: scale(0.90);
 }
