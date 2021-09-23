@@ -24,7 +24,7 @@
 }
 
 .sender input {
-    margin-top: 4px;
+    margin-top: 0;
     height: 25px;
     width: 94%;
     border-radius: 5px;
@@ -36,8 +36,12 @@
     border: 1px solid #d0d0d0;
 }
 
+.sender {
+    margin-bottom: 10px;
+}
+
 .message input {
-    margin-top: 4px;
+    margin-top: 0;
     height: 25px;
     width: 94%;
     border-radius: 5px;
