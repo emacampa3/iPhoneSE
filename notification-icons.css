@@ -1,8 +1,19 @@
-/* Messages Icon */
- .notification-icon-messages {
+/* Position of the icon */
+.notification-icon-position {
     position: absolute;
     top: 220px;
     left: 16px;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    background: linear-gradient(#ffffff 0%, #bababa 100%);
+}
+
+/* Messages Icon */
+.notification-icon-messages {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 14px;
     height: 14px;
     border-radius: 4px;
@@ -42,8 +53,8 @@
 /* Messenger Icon */
 .notification-icon-messenger {
     position: absolute;
-    top: 220px;
-    left: 16px;
+    top: 0;
+    left: 0;
     width: 14px;
     height: 14px;
     border-radius: 4px;
@@ -109,10 +120,10 @@
 }
 
 /* Mail Icon */
-/*.notification-icon-mail {
+.notification-icon-mail {
 	position: absolute;
-    top: 220px;
-    left: 16px;
+    top: 0;
+    left: 0;
     width: 14px;
     height: 14px;
     border-radius: 4px;
@@ -174,13 +185,13 @@
 	background: #fff;
 	border-radius: 1px;
 	transform: rotateZ(45deg); 
-}*/
+}
 
 /* Twitter Icon */
 .notification-icon-twitter {
     position: absolute;
-    top: 220px;
-    left: 16px;
+    top: 0;
+    left: 0;
     width: 14px;
     height: 14px;
     overflow: hidden;
@@ -221,8 +232,8 @@
 /* Facebook Icon */
 .notification-icon-facebook {
     position: absolute;
-    top: 220px;
-    left: 16px;
+    top: 0;
+    left: 0;
     width: 14px;
     height: 14px;
     border-radius: 4px;
@@ -263,8 +274,8 @@
 /* Calendar Icon */
 .notification-icon-calendar {
     position: absolute;
-    top: 220px;
-    left: 16px;
+    top: 0;
+    left: 0;
     width: 14px;
     height: 14px;
     border-radius: 4px;
@@ -292,12 +303,7 @@
     font-weight: 200;
 }
 
-/* <div class="calendar-date">
-                <span id="calendar-day-week"></span>
-                <span id="calendar-day"></span>
-            </div> */
-
-/* .clock-date {
+.clock-date {
     color: #fff;
     font-family: 'Heebo', sans-serif;
     font-weight: 100;
@@ -311,8 +317,7 @@
     justify-content: center;
     letter-spacing: 1px;
 }
-  
-  
+
 .clock-date {
     font-weight: 100;
     position: absolute;
@@ -330,4 +335,4 @@
 
 #date-day {
     margin-right: 2px;
-} */
+}
