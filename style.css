@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -18,10 +19,6 @@ html {
 
     --background-white: linear-gradient(#e6e6e6, #2c404db9);
     --background-image-white: url('image/iphone-SE-2020-wallpaper-white-ispazio-wallpapers-central-idownloadblog.png');
-
-    --background-red: linear-gradient(#e6e6e6, #6a1017a8);
-    --background-image-red: url('image/2639100.webp');
-
 }
 
 /* html[data-theme='dark'] {
@@ -30,7 +27,7 @@ html {
 
 body {
     display: flex;
-    background: var(--background-black);
+    background: var(--background-white);
 }
 
 .iphone-body {
@@ -53,7 +50,7 @@ html.transition *:after {
     left: 30%;
     transform: translate(-50%, -50%);
     border: 15px solid #000;
-    background-image: var(--background-image-black);
+    background-image: var(--background-image-white);
     background-repeat: no-repeat;
     background-size: 280px 600px;
     border-radius: 49px;
@@ -385,7 +382,7 @@ html.transition *:after {
     white-space: nowrap;
 }
 
-.notification div:last-child {
+.notification .sent-time {
     position: absolute;
     font-family: 'Heebo', sans-serif;
     color: #45505c;
