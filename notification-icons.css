@@ -10,6 +10,7 @@
 }
 
 /* Messages Icon */
+
 .notification-icon-messages {
     position: absolute;
     top: 0;
@@ -51,6 +52,7 @@
 }
 
 /* Messenger Icon */
+/*
 .notification-icon-messenger {
     position: absolute;
     top: 0;
@@ -120,6 +122,7 @@
 }
 
 /* Mail Icon */
+/*
 .notification-icon-mail {
 	position: absolute;
     top: 0;
@@ -188,6 +191,7 @@
 }
 
 /* Twitter Icon */
+/*
 .notification-icon-twitter {
     position: absolute;
     top: 0;
@@ -230,6 +234,7 @@
 }
 
 /* Facebook Icon */
+/*
 .notification-icon-facebook {
     position: absolute;
     top: 0;
@@ -272,6 +277,7 @@
 }
 
 /* Calendar Icon */
+/*
 .notification-icon-calendar {
     position: absolute;
     top: 0;
