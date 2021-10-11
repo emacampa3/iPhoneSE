@@ -1,56 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;400&display=swap');
+
 /* Form */
 .container {
-    position: absolute;
-    top: 22%;
-    left: 60%;
-    width: 25%;
-    height: 50%;
-    background-color: #F0F0F0;
-    padding: 25px 30px;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+	position: absolute;
+	top: 30%;
+	left: 60%;
+	width: 25%;
+	height: 28%;
+	background-color: #F0F0F0;
+	padding: 25px 30px;
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
 }
 
 .container .title {
-    font-size: 15px;
-    font-weight: 400;
-    position: relative;
+	font-family: 'Heebo', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	position: relative;
 }
 
 .user-input {
-    margin: 15px 0;
-    font-weight: 200;
-    font-size: 13px;
+	margin: 20px 0;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 200;
+	font-size: 13px;
 }
 
-.sender input {
-    margin-top: 0;
-    height: 25px;
-    width: 94%;
-    border-radius: 5px;
-    font-size: 11px;
-    font-weight: 100;
-    padding-left: 10px;
-    outline: none;
-    background-color: #F0F0F0;
-    border: 1px solid #d0d0d0;
+.message {
+	margin-top: 18px;
 }
 
-.sender {
-    margin-bottom: 10px;
+.sender, .message {
+	font-family: 'Heebo', sans-serif;
+	font-size: 11px;
+	font-weight: 100;
 }
 
-.message input {
-    margin-top: 0;
-    height: 25px;
-    width: 94%;
-    border-radius: 5px;
-    font-size: 11px;
-    font-weight: 100;
-    padding-left: 10px;
-    outline: none;
-    background-color: #F0F0F0;
-    border: 1px solid #d0d0d0;
+input {
+	margin-top: 0;
+	height: 25px;
+	width: 94%;
+	border-radius: 5px;
+	font-family: 'Heebo', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	padding-left: 10px;
+	padding-top: 3px;
+	outline: none;
+	background-color: #f2f2f2;
+	border: 1px solid #d0d0d0;
 }
 
 /* Toggle */
@@ -58,7 +57,7 @@ input[type=checkbox] {
 	height: 0;
 	width: 0;
 	visibility: hidden;
-    position: absolute;
+  position: absolute;
 }
 
 label {
@@ -67,11 +66,10 @@ label {
 	width: 40px;
 	height: 19px;
 	background: #a89fc2;
-    border: 1px solid rgba(255, 255, 255, 0.2);
 	border-radius: 100px;
 	position: absolute;
-    top: 40%;
-    left: 73%;
+  top: 65%;
+  left: 73%;
 }
 
 label:after {
@@ -88,7 +86,6 @@ label:after {
 
 input:checked + label {
 	background: #796ba5;
-    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 input:checked + label:after {
@@ -96,37 +93,41 @@ input:checked + label:after {
 }
 
 .dark-light-theme{
-    position: absolute;
-    top: 40%;
+	position: absolute;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 200;
+	font-size: 13px;
+	top: 65%;
 }
 
 .button {
-    position: absolute;
-    color: #fff;
-    top: 86%;
-    left: 10%;
-    height: 45px;
-    width: 80%;
-    border: none;
+	position: absolute;
+	color: #fff;
+	top: 79%;
+	left: 10%;
+	height: 45px;
+	width: 80%;
+	border: none;
 }
 
 .button input {
-    border-radius: 5px;
-    border: 1px solid #353535;
-    height: 100%;
-    width: 100%;
-    font-size: 15px;
-    letter-spacing: 1px;
-    font-weight: 400;
-    color: #353535;
-    cursor: pointer;
-    transition: 0.18s linear;
+	border-radius: 5px;
+	border: 1px solid #353535;
+	height: 100%;
+	width: 100%;
+	font-family: 'Heebo', sans-serif;
+	font-size: 15px;
+	letter-spacing: 1px;
+	font-weight: 400;
+	color: #353535;
+	cursor: pointer;
+	transition: 0.18s linear;
 }
 
 .button input:hover {
-    background-color: #9c8fc7;
-    color: #fff;
-    border: none;
+	background-color: #9c8fc7;
+	color: #fff;
+	border: none;
 }
 
 .button input:active {
