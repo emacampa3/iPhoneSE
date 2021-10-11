@@ -42,6 +42,7 @@ setInterval(clockText, 1000)
 
 
 /* date text calendar */
+/*
 const calendarWeek = document.getElementById('calendar-day-week'),
       calendarDay = document.getElementById('calendar-day')
 
@@ -78,3 +79,42 @@ let trans = () => {
         document.documentElement.classList.remove('transition')
     }, 10)
 } */
+
+
+const createState = (state) => {
+	return new Proxy(state, {
+		set(target, property, value) {
+			target[property] = value;
+			render();
+			return true;
+		},
+	});
+};
+
+const state = createState({
+	name: "Branko",
+	message: "Let's have lunch tommorow!",
+});
+
+const listeners = document.querySelectorAll("[data-model]");
+
+listeners.forEach((listener) => {
+	const name = listener.dataset.model;
+	listener.addEventListener("keyup", (event) => {
+		state[name] = listener.value;
+		console.log(state);
+	});
+});
+
+const render = () => {
+	const bindings = Array.from(document.querySelectorAll("[data-binding]")).map(
+		(e) => e.dataset.binding
+	);
+	bindings.forEach((binding) => {
+		document.querySelector(`[data-binding='${binding}']`).innerHTML =
+			state[binding];
+		document.querySelector(`[data-model='${binding}']`).value = state[binding];
+	});
+};
+
+render();
