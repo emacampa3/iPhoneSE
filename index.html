@@ -11,147 +11,144 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="title">Customize iPhone</div>
-        <form action="#">
-        <div class="user-input">
+	<!-- Form -->
+	<div class="container">
+		<div class="title">Customize the iPhone</div>
+			<div class="user-input"></div>
 
-            <div class="sender">From
-            <input type="text" placeholder="Enter the name" required></div>
+					<div class="sender">From
+					<input id="name" type="text" name="name"  data-model="name" maxlength="20" /></div>
 
-            <div class="message">Message
-            <input type="text" placeholder="Enter your message" required></div>
+					<div class="message">Message
+					<input id="message" type="text" name="message" data-model="message" maxlength="40" /></div>
 
-            <div class="toggle">
-                <span class="dark-light-theme">Appearance (Light/Dark)</span>
-                <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
-            </div>
-        </div>
+					<div class="toggle">
+							<span class="dark-light-theme">Change the theme</span>
+							<input type="checkbox" id="switch" />
+							<label for="switch"></label>
+          </div>
 
-        
-        
-        <button class="button">
-            <input type="submit" value="Apply your choices">
+					<button class="button">
+            <input type="submit" value="Apply your choices" onclick="">
         </button>
-        </form>
-    </div>
+		</div>
+	</div>
+
+	<!-- iPhone screen and body -->
+	<div class="iphone-body">
+
+			<div class="notification">
+					<div></div>
+					<div id="sender-name" data-binding="name"></div>
+					<div id="application-name">MESSAGES</div>
+					<div id="notification-message" data-binding="message"></div>
+					<div class="sent-time">now</div>
+			</div>
+			
+			<div class="shadow">
+					<div></div>
+			</div>
+
+			<div class="shade"></div>
+			
+			<div class="notch">
+					<div class="speaker"></div>
+					<div class="camera">
+							<div class="glare"></div>
+					</div>
+			</div>
+
+			<div class="off-on-button">
+					<div></div>
+			</div>
+
+			<div class="upper-left-toggler">
+					<div></div>
+			</div>
+			<div class="upper-right-line"></div>
+			<div class="lower-left-line"></div>
+			<div class="lower-right-line"></div>
+
+			<div class="volume">
+					<div></div>
+					<div></div>
+			</div>
+
+			<div class="sim">No SIM</div>
+			<div class="wifi"></div>
+			<div class="lock">
+					<div></div>
+					<div></div>
+			</div>
+
+			<div class="battery">
+					<div id="battery-percentage"></div>
+					<div>
+							<div></div>
+							<div></div>
+					</div>
+			</div>
+
+			<div class="clock">
+					<div class="clock-text">
+							<div class="clock-text-hour" id="text-hour">...</div>
+							<div class="clock-text-minutes" id="text-minutes"></div>
+					</div>
+
+					<div class="clock-date">
+							<span id="date-day-week"></span>
+							<span id="date-day"></span>
+							<span id="date-month"></span>
+					</div>
+			</div>
+	
+			<!-- Different notification icons -->
+			<div class="notification-icon-position">
+
+					<div class="notification-icon-messages">
+							<div id="icon"></div>
+					</div>
+
+					<div class="notification-icon-messenger">
+							<div id="icon">
+									<div class="lightning"></div>
+							</div>
+					</div>
+
+					<div class="notification-icon-twitter">
+							<div id="icon"></div>
+					</div>
+
+					<div class="notification-icon-mail">
+							<div class="mail">
+									<div class="inner upper"></div>
+									<div class="inner lower"></div>
+							</div>
+					</div>
+
+					<div class="notification-icon-calendar">
+							<span id="calendar-day-week"></span>
+							<span id="calendar-day"></span>
+					</div>
+			</div>
 
 
-    <div class="iphone-body">
-        
-        <div class="shadow">
-            <div></div>
-        </div>
+			<div class="slide">Press Home to unlock</div>
+			<div class="dot"></div>
+			<div class="camera-icon">
+					<div class="lens"></div>
+					<div class="button"></div>
+					<div class="dot"></div>
+			</div>
 
-        <div class="shade"></div>
-        
-        <div class="notch">
-            <div class="speaker"></div>
-            <div class="camera">
-                <div class="glare"></div>
-            </div>
-        </div>
-
-        <div class="off-on-button">
-            <div></div>
-        </div>
-
-        <div class="upper-left-toggler">
-            <div></div>
-        </div>
-        <div class="upper-right-line"></div>
-        <div class="lower-left-line"></div>
-        <div class="lower-right-line"></div>
-
-        <div class="volume">
-            <div></div>
-            <div></div>
-        </div>
-
-        <div class="sim">No SIM</div>
-        <div class="wifi"></div>
-        <div class="lock">
-            <div></div>
-            <div></div>
-        </div>
-
-        <div class="battery">
-            <div id="battery-percentage"></div>
-            <div>
-                <div></div>
-                <div></div>
-            </div>
-        </div>
-
-        <div class="clock">
-            <div class="clock-text">
-                <div class="clock-text-hour" id="text-hour">...</div>
-                <div class="clock-text-minutes" id="text-minutes"></div>
-            </div>
-
-            <div class="clock-date">
-                <span id="date-day-week"></span>
-                <span id="date-day"></span>
-                <span id="date-month"></span>
-            </div>
-        </div>
-        
-        <div class="notification">
-            <div></div>
-            <div id="sender-name">Branko</div>
-            <div id="application-name">MESSAGES</div>
-            <div id="notification-message">Let's have lunch tomorrow!</div>
-            <div>now</div>
-        </div>
-
-
-        <!-- Different notification icons -->
-        <div class="notification-icon-position">
-
-            <div class="notification-icon-messages">
-                <div id="icon"></div>
-            </div>
-
-            <div class="notification-icon-messenger">
-                <div id="icon">
-                    <div class="lightning"></div>
-                </div>
-            </div>
-
-            <div class="notification-icon-twitter">
-                <div id="icon"></div>
-            </div>
-
-            <div class="notification-icon-mail">
-                <div class="mail">
-                    <div class="inner upper"></div>
-                    <div class="inner lower"></div>
-                </div>
-            </div>
-
-            <div class="notification-icon-calendar">
-                <span id="calendar-day-week"></span>
-                <span id="calendar-day"></span>
-            </div>
-        </div>
-
-
-        <div class="slide">Press Home to unlock</div>
-        <div class="dot"></div>
-        <div class="camera-icon">
-            <div class="lens"></div>
-            <div class="button"></div>
-            <div class="dot"></div>
-        </div>
-
-        <div class="lower-notch">
-            <div class="shade-lower"></div>
-            <div class="home">
-                <div></div>
-            </div>
-        </div>
-    </div>
+			<div class="lower-notch">
+					<div class="shade-lower"></div>
+					<div class="home">
+							<div></div>
+					</div>
+			</div>
+	</div>
     
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
