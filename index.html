@@ -17,21 +17,89 @@
 		<div class="title">Customize the iPhone</div>
 			<div class="user-input"></div>
 
-					<div class="sender">From
-					<input id="name" type="text" name="name"  data-model="name" maxlength="20" /></div>
+				<div class="sender">From
+				<input id="name" type="text" name="name"  data-model="name" maxlength="20" /></div>
 
-					<div class="message">Message
-					<input id="message" type="text" name="message" data-model="message" maxlength="40" /></div>
+				<div class="message">Message
+				<input id="message" type="text" name="message" data-model="message" maxlength="40" /></div>
 
-					<div class="toggle">
-							<span class="dark-light-theme">Change the theme</span>
-							<input type="checkbox" id="switch" />
-							<label for="switch"></label>
-          </div>
+				<div class="toggle">
+						<span class="dark-light-theme">Change the theme</span>
+						<input type="checkbox" id="switch" />
+						<label for="switch"></label>
+				</div>
 
-					<button class="button">
-            <input type="submit" value="Apply your choices" >
-        </button>
+
+			<div class="main-container">
+
+				<div class="container-icons">
+					<div class="icon-container messages">
+						<div class="message-circle"></div>
+						<div class="message-triangle"></div>
+					</div>
+				</div>
+
+				<div class="container-icons">
+					<div class="icon-container mail">
+						<div class="mail-line1"></div>
+						<div class="mail-line2"></div>
+						<div class="inner upper"></div>
+						<div class="inner lower"></div>
+					</div>
+				</div>
+
+				<div class="container-icons">
+					<div class="icon-container calendar">
+							<span id="calendar-day-week"></span>
+							<span id="calendar-day"></span>
+					</div> 
+				</div>
+
+				<div class="container-icons">
+					<div class="icon-container messenger">
+						<div class="messenger-circle">
+							<div class="lightning">
+								<div class="line1"></div>
+								<div class="line2"></div>
+							</div>
+						</div>
+						<div class="messenger-triangle"></div>
+					</div>
+				</div>
+
+				<div class="container-icons">
+					<div class="icon-container facebook">
+						<div class="line"></div>
+					</div>
+				</div>
+				
+				<div class="container-icons">
+					<div class="icon-container instagram">
+						<div class="instagram-borderRectangle">
+							<div class="instagram-lens"></div>
+							<div class="instagram-flash"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-icons">
+					<div class="icon-container twitter">
+						<div class="twitter-icon"></div>
+					</div>
+				</div>
+
+				<div class="container-icons">
+					<div class="icon-container paypal">
+						<div class="letterCircle"></div>
+						<div class="letterRectangle"></div>
+					</div>
+				</div>
+
+			</div>
+
+			<button class="button">
+				<input type="submit" value="Apply your choices" >
+			</button>
 		</div>
 	</div>
 
@@ -40,10 +108,18 @@
 
 			<div class="notification">
 					<div></div>
-					<div id="sender-name" data-binding="name"></div>
+					<div data-binding="name"></div>
 					<div id="application-name">MESSAGES</div>
-					<div id="notification-message" data-binding="message"></div>
+					<div data-binding="message"></div>
 					<div class="sent-time">now</div>
+			</div>
+
+			<!-- Different notification icons -->
+			<div class="notification-icon-position">
+
+					<div class="notification-icon-messages">
+							<div id="icon"></div>
+					</div>
 			</div>
 			
 			<div class="shadow">
@@ -101,38 +177,7 @@
 							<span id="date-day"></span>
 							<span id="date-month"></span>
 					</div>
-			</div>
-	
-			<!-- Different notification icons -->
-			<div class="notification-icon-position">
-
-					<div class="notification-icon-messages">
-							<div id="icon"></div>
-					</div>
-
-					<div class="notification-icon-messenger">
-							<div id="icon">
-									<div class="lightning"></div>
-							</div>
-					</div>
-
-					<div class="notification-icon-twitter">
-							<div id="icon"></div>
-					</div>
-
-					<div class="notification-icon-mail">
-							<div class="mail">
-									<div class="inner upper"></div>
-									<div class="inner lower"></div>
-							</div>
-					</div>
-
-					<div class="notification-icon-calendar">
-							<span id="calendar-day-week"></span>
-							<span id="calendar-day"></span>
-					</div>
-			</div>
-
+				</div>
 
 			<div class="slide">Press Home to unlock</div>
 			<div class="dot"></div>
