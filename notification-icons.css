@@ -1,167 +1,66 @@
-/* Position of the icon */
-.notification-icon-position {
-    position: absolute;
-    top: 220px;
-    left: 16px;
-    width: 14px;
-    height: 14px;
-    border-radius: 4px;
-    background: linear-gradient(#ffffff 0%, #bababa 100%);
+.main-container {
+	max-width: 160px;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 50px 17.5%;
+	transform: scale(1.5);
 }
 
-/* Messages Icon */
-
-.notification-icon-messages {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 14px;
-    height: 14px;
-    border-radius: 4px;
-	background: linear-gradient(#66ca3b 0%, #07bf38 100%);
+.container-icons {
+	margin: 0 auto;
 }
 
-.notification-icon-messages div {
-    position: absolute;
-    top: -20px;
-    left: -20px;
+.icon-container {
+	margin: 0 2px;
+	width: 16px;
+	height: 16px;
+	border-radius: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	background-color: #ececec;
+	position: relative;
+	cursor: pointer;
 }
 
-.notification-icon-messages:before {
-	position: absolute;
-	content: '';
-	width: 10px;
-	height: 10px;
-	top: 39px;
-	left: 39px;
-	margin: -37px 0 0 -37px;
-	background: #fff;
-	border-radius: 50%;
-	transform: scaleY(0.85);
-}
-
-.notification-icon-messages:after {
-	position: absolute;
-	content: '';
-    top: 10px;
-	left: 1px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: white transparent transparent transparent;
-	transform: rotateZ(35deg) scaleX(0.9) scaleY(1.6); 
-}
-
-/* Messenger Icon */
-/*
-.notification-icon-messenger {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 14px;
-    height: 14px;
-    border-radius: 4px;
-    background: #fff;
-}
-
-.notification-icon-messenger div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-.notification-icon-messenger:before {
-	position: absolute;
-	content: '';
-	width: 10px;
-	height: 10px;
-	top: 39px;
-	left: 39px;
-	margin: -37px 0 0 -37px;
-    border-radius: 50%;
-    background: linear-gradient(45deg, rgba(35,130,254,1) 0%, rgba(35,130,254,1) 20%, rgba(168,54,245,1) 55%, rgba(253,101,108,1) 90%);
-	transform: scaleY(0.85);
-}
-
-.notification-icon-messenger:after {
-	position: absolute;
-	content: '';
-    top: 10px;
-	left: 1px;
-	border-width: 2px;
-	border-style: solid;
-	border-color: #2179fc transparent transparent transparent;
-	transform: rotateZ(35deg) scaleX(0.9) scaleY(1.6); 
-}
-
-.lightning {
-    position: absolute;
-    width: 3px;
-    height: 1px;
-    background: #fff;
-    transform:  translate(-50%, -50%) rotate(34deg);              
-}
-    
-.lightning:before, 
-.lightning:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 3px 1px 0 0;
-    border-color: #fff transparent transparent transparent;
-}
-    
-.lightning:after {
-    left: auto;
-    right: 0;
-    bottom: 0;
-    border-width: 0 0 3px 1px;
-    border-color: transparent transparent #fff transparent;
-}
-
-/* Mail Icon */
-/*
-.notification-icon-mail {
-	position: absolute;
-    top: 0;
-    left: 0;
-    width: 14px;
-    height: 14px;
-    border-radius: 4px;
-	background: linear-gradient(#1a51f0 0%, #02c9df 100%); 
-}
-
+/* Mail */
 .mail {
-	position: absolute;
-	width: 8px;
-	height: 6px;
-	top: 30%;
-	left: 20%;
-	overflow: hidden;
-	border-radius: 1px;
+	background: linear-gradient(#1a51f0 0%, #02c9df 100%);
+ 	overflow: hidden; 
 }
 
 .mail:before, .mail:after {
-	position: absolute;
 	content: '';
-	width: 0;
-	height: 0;
+	position: relative;
+	top: -5px;
 	border-width: 3px;
-	border-style: solid; 
+	border-style: solid;
 }
 
 .mail:before {
-	top: 0;
-	left: 0;
-	border-color: transparent transparent transparent white; 
+	border-color: transparent transparent transparent white;
 }
 
 .mail:after {
-	top: 0;
-	right: 0;
 	border-color: transparent white transparent transparent; 
+}
+
+.mail-line1 {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	height: 4px;
+	width: 100%;
+	background: linear-gradient(#1a51f0 0%, #027fdf 100%);
+}
+
+.mail-line2 {
+	position: absolute;
+	z-index: 3;
+	bottom: 0;
+	height: 4px;
+	width: 100%;
+	background: linear-gradient(#339dee 0%, #02c9df 100%);
 }
 
 .mail .inner {
@@ -169,176 +68,321 @@
 }
 
 .mail .inner.upper {
-	width: 6px;
-	height: 6px;
-    top: -50%;
-    left: 22%;
+	width: 10px;
+	height: 10px;
+	top: -10%;
+	left: 20%;
 	z-index: 2;
 	background: #fff;
-    border-radius: 1px;
-	box-shadow: 0 0 0 0.5px #1ca4f7;
-	transform: rotateZ(45deg); 
+	border-radius: 1px;
+	box-shadow: 0 0 0 0.75px #1c91da;
+ 	transform: rotate(45deg);  
 }
 
 .mail .inner.lower {
-	width: 8px;
-	height: 8px;
-    top: 70%;
+	width: 10px;
+	height: 10px;
+	left: 3px;
+	top: 50%;
 	z-index: 1;
 	background: #fff;
-	border-radius: 1px;
-	transform: rotateZ(45deg); 
+	transform: rotate(45deg); 
 }
 
-/* Twitter Icon */
-/*
-.notification-icon-twitter {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 14px;
-    height: 14px;
-    overflow: hidden;
-    border-radius: 4px;
-	background : #fff;
-}
-
-.notification-icon-twitter div {
-    position: absolute;
-}
-
-.notification-icon-twitter:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 5px;
-    width: 5px;
-    margin-top:-5px;
-    border-radius: 50%;
-    background-color: #1CA1F1;
-    box-shadow:
-        1.1px -6.05px 0 1.85px #fff,
-        1.0px -2.9px 0 -0.15px #1CA1F1,
-        1.975px -5.35px 0 1.84px #fff,
-        1.2px -2.2px 0 -0.125px #1CA1F1,
-        -2.1px -6.7px 0 4.75px #fff,
-        -5px -0.9px 0 0.07px #1CA1F1,
-        -7.2px -1.35px 0 0.07px #fff,
-        -5px 1px 0 0.04px #1CA1F1,
-        -6.8px 1.1px 0 0.07px #fff,
-        -4.3px 2.8px 0 0.07px #1CA1F1,
-        -8.3px 1.175px 0 2.775px #fff,
-        -8.275px -6.575px 0 2.775px #fff,
-        -4.25px 0.95px 0 4.25px #1CA1F1;
-}
-
-/* Facebook Icon */
-/*
-.notification-icon-facebook {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 14px;
-    height: 14px;
-    border-radius: 4px;
-	background: linear-gradient(#337cca 0%, #2159a2 100%);
-    overflow: hidden;
-}
-
-.notification-icon-facebook div {
-    position: absolute;
-    width: 4px;
-    height: 14px;
-    border-radius: 2px;
-    left: 82%;
-    background: linear-gradient(#337cca 0%, #2159a2 100%);
-}
-
-.notification-icon-facebook:before {
-    background: #2159a2;
-    content: '';
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    top: 25%;
-    left: 48%;
-    border: 2px solid #eee;
-    border-radius: 3px;
-}
-.notification-icon-facebook:after {
-    background: #eee;
-    content: "";
-    position: absolute;
-    top: 55%;
-    left: 40%;
-    width: 6px;
-    height: 2px;
-}
-
-/* Calendar Icon */
-/*
-.notification-icon-calendar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 14px;
-    height: 14px;
-    border-radius: 4px;
+/* Calendar */
+.calendar {
 	background: #fff;
 }
 
 #calendar-day-week {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #EC7063;
-    font-size: 3px;
-    font-weight:bold;
-    font-family: 'Heebo', sans-serif;
+	position: absolute;
+	top: 25%;
+	left: 53%;
+	transform: translate(-50%, -50%);
+	color: #EC7063;
+	font-size: 3px;
+	font-weight:bold;
+	font-family: 'Heebo', sans-serif;
 }
 
 #calendar-day {
-    position: absolute;
-    top: 66%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 8px;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 200;
+	position: absolute;
+	top: 60%;
+	left: 53%;
+	transform: translate(-50%, -50%);
+	font-size: 8px;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 200;
 }
 
 .clock-date {
-    color: #fff;
-    font-family: 'Heebo', sans-serif;
-    font-weight: 100;
-    font-size: 4px;
-    position: absolute;
-    z-index: 2;
+	color: #fff;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 100;
+	font-size: 4px;
+	position: absolute;
+	z-index: 2;
 }
 
 .clock-text {
-    display: flex;
-    justify-content: center;
-    letter-spacing: 1px;
+	display: flex;
+	justify-content: center;
+	letter-spacing: 1px;
 }
 
 .clock-date {
-    font-weight: 100;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    font-size: 15px;
-    white-space: nowrap;
+	font-weight: 100;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	font-size: 15px;
+	white-space: nowrap;
 }
 
 #date-day-week {
-    margin-right: 2px;
+	margin-right: 2px;
 }
 
 #date-day {
-    margin-right: 2px;
+	margin-right: 2px;
+}
+
+/* Facebook */
+.facebook {
+ 	background: linear-gradient(-45deg, #0098DA, #0c4196);
+	overflow: hidden;
+}
+
+.line {
+	position: absolute;
+	width: 3px;
+	height: 100%;
+	border-radius: 1px;
+	right: 0px;
+	background: linear-gradient(45deg, #018dc9, #0d5b9b);
+}
+
+.facebook:before {
+	background: linear-gradient(45deg, #0098DA, #1f548c);
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 15px;
+	top: 20%;
+	left: 50%;
+	border: 2px solid #fff;
+	border-radius: 3px;
+}
+.facebook:after {
+	background: #fff;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	width: 6px;
+	height: 2px;
+}
+
+/* Twitter */
+.twitter {
+	background: #fff;
+	overflow: hidden; /* always added to the parrent class */
+}
+
+.twitter-icon {
+	content: '';
+	position: relative;
+	top: -7px;
+	left: 2px;
+	height: 5px;
+	width: 5px;
+	margin-top:-5px;
+	border-radius: 50%;
+	background-color: #1CA1F1;
+	box-shadow:
+			1.1px -6.05px 0 1.85px #fff,
+			1.0px -2.9px 0 -0.15px #1CA1F1,
+			1.975px -5.35px 0 1.84px #fff,
+			1.2px -2.2px 0 -0.125px #1CA1F1,
+			-2.1px -6.7px 0 4.75px #fff,
+			-5px -0.9px 0 0.07px #1CA1F1,
+			-7.2px -1.35px 0 0.07px #fff,
+			-5px 1px 0 0.04px #1CA1F1,
+			-6.8px 1.1px 0 0.07px #fff,
+			-4.3px 2.8px 0 0.07px #1CA1F1,
+			-8.3px 1.175px 0 2.775px #fff,
+			-8.275px -6.575px 0 2.775px #fff,
+			-4.25px 0.95px 0 4.25px #1CA1F1;
+}
+
+/* Messenger */
+.messenger {
+	background: #fff;
+}
+
+.messenger-circle {
+  position: relative;
+  top: -3px;
+  left: 2px;
+  width: 10px;
+  height: 9px;
+	border-radius: 50%;
+  background: radial-gradient(circle farthest-corner at 35% 90%, #2394FE, transparent 70%),
+		radial-gradient(circle farthest-corner at 30% 90%, #FD656C, transparent 50%),
+		radial-gradient(circle farthest-corner at 100% 0, #FD656C, transparent 50%),
+		radial-gradient(circle farthest-corner at 100% 100%, #893dc2, transparent),
+		linear-gradient(#FD656C, #bc318f 30%, #893dc2 50%, #2394FE 70%, #2394FE 100%);
+}
+
+.messenger-triangle {
+  position: relative;
+  left: -9px;
+	top: 0px;
+  border-width: 2.5px;
+  border-style: solid;
+  border-color: #3b92e2 transparent transparent transparent;
+  transform: rotateZ(38deg) scaleX(0.55) scaleY(0.9);
+}
+
+.lightning {
+	position: relative;
+  top: 4px;
+  left: 5px;
+	width: 3px;
+	height: 1px;
+	background: #fff;
+	transform:  translate(-50%, -50%) rotate(45deg);              
+}
+	
+.lightning:before, .lightning:after {
+	content: '';
+	position: relative;
+	border-style: solid;
+	border-width: 3px 1px 0 0;
+	border-color: #fff transparent transparent transparent;
+}
+.lightning:before {
+  top: 4px;
+  right: 0px;
+}
+	
+.lightning:after {
+  content: '';
+  top: -39px;
+	right: -2px;
+	bottom: 0;
+	border-width: 0 0 3px 1px;
+	border-color: transparent transparent #fff transparent;
+}
+
+/* Messages */
+.messages {
+	background: linear-gradient(#66ca3b 0%, #07bf38 100%);
+}
+
+.message-circle {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 10px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.message-triangle {
+  position: relative;
+  left: -4px;
+	top: -1px;
+  border-width: 2.5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  transform: rotateZ(38deg) scaleX(0.45) scaleY(0.8);
+}
+
+/* Instagram */
+.instagram {
+	background: 
+		radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+		radial-gradient(circle farthest-corner at 0 -25%, #5258cf, transparent 50%),
+		radial-gradient(circle farthest-corner at 100% 0, #893dc2, transparent 50%),
+		radial-gradient(circle farthest-corner at 100% 100%, #d9317a, transparent),
+		linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+}
+.instagram-borderRectangle {
+	width: 10px;
+	height: 10px;
+	border-radius: 25%;
+	border: 1px solid white;
+	margin: auto;
+	position: relative;
+		
+}
+.instagram-lens {
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	border: 1px solid white;
+	margin: 2px auto 0 auto;
+	z-index:0;
+}
+.instagram-flash {
+	width: 1px;
+	height: 1px;
+	border-radius: 50%;
+	border: 1px thin white;
+	background-color: white;
+	position: absolute;
+	top: 1px;
+	right: 1px;
+}
+
+/* PayPal */
+.paypal {
+	background: linear-gradient(-45deg, #0098DA, #002A6E);
+	position: relative;
+}
+
+.letterCircle {
+	width: 4px;
+	height: 5px;
+	border-radius: 0 50% 50% 0;
+	background-color: white;
+	transform: skewx(-10deg);
+	position: absolute;
+	top: 4px;
+	left: 7px;
+}
+
+.letterCircle:after {
+  content: "";
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  transform: translate(2px, 1.5px);
+  border-radius: 0 50% 50% 0;
+  background-color: rgba(173, 206, 227, .7);
+}
+	
+.letterRectangle {
+	width: 2px;
+	height: 8px;
+	background-color: white;
+	border-radius: 5% 0 5% 5%;
+	transform: skew(-10deg);
+	position:absolute;
+	top: 4px;
+	left: 5px;
+}
+
+.letterRectangle:after {
+  content:"";
+  width: 90%;
+  height: 100%;
+  position: absolute;
+  transform: translate(2px, 1.5px);
+  border-radius: 5% 0 5% 5%;
+  background-color: rgba(173, 206, 227, .7);
 }
