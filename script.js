@@ -3,84 +3,63 @@ const batteryPercentage = document.querySelector('#battery-percentage').innerHTM
 
 /* clock and date text */
 const textHour = document.getElementById('text-hour'),
-      textMinutes = document.getElementById('text-minutes'),
-      dateWeek = document.getElementById('date-day-week'),
-      dateDay = document.getElementById('date-day'),
-      dateMonth = document.getElementById('date-month')
+	textMinutes = document.getElementById('text-minutes'),
+	dateWeek = document.getElementById('date-day-week'),
+	dateDay = document.getElementById('date-day'),
+	dateMonth = document.getElementById('date-month')
 
 const clockText = () => {
-    let date = new Date()
+	let date = new Date()
 
-    let hh = date.getHours(),
-        mm = date.getMinutes(),
-        day = date.getDate(),
-        dayweek = date.getDay(),
-        month = date.getMonth()
+	let hh = date.getHours(),
+		mm = date.getMinutes(),
+		day = date.getDate(),
+		dayweek = date.getDay(),
+		month = date.getMonth()
 
-    // Show a zero before hours
-    if(hh < 10) {hh = `0${hh}`}
+	// Show a zero before hours
+	if(hh < 10) {hh = `0${hh}`}
 
-    // Show time
-    textHour.innerHTML = `${hh}:`
-    
-    // Show a zero before the minutes
-    if(mm < 10) {mm = `0${mm}`}
-    
-    // Show minutes
-    textMinutes.innerHTML = mm
+	// Show time
+	textHour.innerHTML = `${hh}:`
+	
+	// Show a zero before the minutes
+	if(mm < 10) {mm = `0${mm}`}
+	
+	// Show minutes
+	textMinutes.innerHTML = mm
 
-    // We get the months of the year and show it
-    let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-    let week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+	// We get the months of the year and show it
+	let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+	let week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
-    // We show the day, the month and the year
-    dateWeek.innerHTML = `${week[dayweek]},`
-    dateDay.innerHTML = day
-    dateMonth.innerHTML = `${months[month]}`
+	// We show the day, the month and the year
+	dateWeek.innerHTML = `${week[dayweek]},`
+	dateDay.innerHTML = day
+	dateMonth.innerHTML = `${months[month]}`
 }
 setInterval(clockText, 1000)
 
 
 /* date text calendar */
-/*
 const calendarWeek = document.getElementById('calendar-day-week'),
-      calendarDay = document.getElementById('calendar-day')
+	calendarDay = document.getElementById('calendar-day')
 
 const clock = () => {
-    let date = new Date()
+	let date = new Date()
 
-    let calDay = date.getDate(),
-        calDayweek = date.getDay()
+	let calDay = date.getDate(),
+		calDayweek = date.getDay()
 
-    let calWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
+	let calWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
 
-    calendarWeek.innerHTML = `${calWeek[calDayweek]}`
-    calendarDay.innerHTML = calDay
+	calendarWeek.innerHTML = `${calWeek[calDayweek]}`
+	calendarDay.innerHTML = calDay
 }
 setInterval(clock, 1000)
 
 
-/* dark & light theme */
-/* const checkbox = document.querySelector('input[name=theme]');
-
-checkbox.addEventListener('change', function() {
-    if(this.checked) {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'dark')
-    } else {
-        trans()
-        document.documentElement.setAttribute('data-theme', 'light')
-    }
-})
-
-let trans = () => {
-    document.documentElement.classList.add('transition');
-    window.setTimeout(() => {
-        document.documentElement.classList.remove('transition')
-    }, 10)
-} */
-
-
+/* two-way data binding (between form and iPhone) */
 const createState = (state) => {
 	return new Proxy(state, {
 		set(target, property, value) {
@@ -93,7 +72,7 @@ const createState = (state) => {
 
 const state = createState({
 	name: "Branko",
-	message: "Let's have lunch tommorow!",
+	message: "I love you, baby!",
 });
 
 const listeners = document.querySelectorAll("[data-model]");
@@ -116,5 +95,26 @@ const render = () => {
 		document.querySelector(`[data-model='${binding}']`).value = state[binding];
 	});
 };
-
 render();
+
+
+/* dark & light theme */
+/*
+const checkbox = document.querySelector('input[name=theme]');
+
+checkbox.addEventListener('change', function() {
+	if(this.checked) {
+			trans()
+			document.documentElement.setAttribute('data-theme', 'dark')
+	} else {
+			trans()
+			document.documentElement.setAttribute('data-theme', 'light')
+	}
+})
+
+let trans = () => {
+	document.documentElement.classList.add('transition');
+	window.setTimeout(() => {
+			document.documentElement.classList.remove('transition')
+	}, 10)
+}*/
