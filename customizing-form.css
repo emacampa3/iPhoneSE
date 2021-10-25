@@ -3,10 +3,10 @@
 /* Form */
 .container {
 	position: absolute;
-	top: 30%;
-	left: 60%;
-	width: 25%;
-	height: 28%;
+	top: 23%;
+	left: 55%;
+	width: 250px;
+	height: 40%;
 	background-color: #F0F0F0;
 	padding: 25px 30px;
 	border-radius: 8px;
@@ -28,7 +28,7 @@
 }
 
 .message {
-	margin-top: 18px;
+	margin-top: 10px;
 }
 
 .sender, .message {
@@ -57,7 +57,7 @@ input[type=checkbox] {
 	height: 0;
 	width: 0;
 	visibility: hidden;
-  position: absolute;
+  position: relative;
 }
 
 label {
@@ -68,7 +68,7 @@ label {
 	background: #a89fc2;
 	border-radius: 100px;
 	position: absolute;
-  top: 65%;
+  top: 70%;
   left: 73%;
 }
 
@@ -97,13 +97,14 @@ input:checked + label:after {
 	font-family: 'Heebo', sans-serif;
 	font-weight: 200;
 	font-size: 13px;
-	top: 65%;
+	margin-left: 10px;
+	top: 70%;
 }
 
 .button {
 	position: absolute;
 	color: #fff;
-	top: 79%;
+	top: 83%;
 	left: 10%;
 	height: 45px;
 	width: 80%;
@@ -116,7 +117,7 @@ input:checked + label:after {
 	height: 100%;
 	width: 100%;
 	font-family: 'Heebo', sans-serif;
-	font-size: 15px;
+	font-size: 13px;
 	letter-spacing: 1px;
 	font-weight: 400;
 	color: #353535;
