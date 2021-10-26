@@ -1,8 +1,8 @@
 .main-container {
-	max-width: 160px;
+	max-width: 170px;
 	display: flex;
 	flex-flow: row wrap;
-	margin: 50px 17.5%;
+	margin: 48px 15%;
 	transform: scale(1.5);
 }
 
