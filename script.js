@@ -72,7 +72,7 @@ const createState = (state) => {
 
 const state = createState({
 	name: "Branko",
-	message: "I love you, baby!",
+	message: "I love you, baby",
 });
 
 const listeners = document.querySelectorAll("[data-model]");
