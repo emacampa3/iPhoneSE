@@ -18,18 +18,12 @@
 			<div class="user-input"></div>
 
 				<div class="sender">From
-				<input id="name" type="text" name="name"  data-model="name" maxlength="20" /></div>
+				<input id="name" type="text" name="name" data-model="name" maxlength="20" /></div>
 
 				<div class="message">Message
 				<input id="message" type="text" name="message" data-model="message" maxlength="40" /></div>
 
-				<div class="toggle">
-						<span class="dark-light-theme">Change the theme</span>
-						<input type="checkbox" id="switch" />
-						<label for="switch"></label>
-				</div>
-
-
+			<span class="icons-text">Choose the icon you want to display</span>
 			<div class="main-container">
 
 				<div class="container-icons">
@@ -96,10 +90,7 @@
 				</div>
 
 			</div>
-
-			<button class="button">
-				<input type="submit" value="Apply your choices" >
-			</button>
+			<div class="footer">Ema Campa &#169 2021 </div>
 		</div>
 	</div>
 
@@ -107,14 +98,20 @@
 	<div class="iphone-body">
 
 			<div class="notification">
-					<div></div>
-					<div data-binding="name"></div>
-					<div id="application-name">MESSAGES</div>
+					<div class="backdrop-notifications"></div>
+					<div data-binding="name" class="name"></div>
+					<div id="application-name-messages">MESSAGES</div>
+<!-- 			<div id="application-name-mail">MAIL</div>
+					<div id="application-name-calendar">CALENDAR</div>
+					<div id="application-name-messenger">MESSENGER</div>
+					<div id="application-name-facebook">FACEBOOK</div>
+					<div id="application-name-instagram">INSTAGRAM</div>
+					<div id="application-name-twitter">TWITTER</div>
+					<div id="application-name-paypal">PAYPAL</div> -->
 					<div data-binding="message"></div>
 					<div class="sent-time">now</div>
 			</div>
 
-			<!-- Different notification icons -->
 			<div class="notification-icon-position">
 
 					<div class="notification-icon-messages">
