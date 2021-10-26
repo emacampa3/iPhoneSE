@@ -3,10 +3,10 @@
 /* Form */
 .container {
 	position: absolute;
-	top: 23%;
+	top: 33%;
 	left: 55%;
 	width: 250px;
-	height: 40%;
+	height: 28%;
 	background-color: #F0F0F0;
 	padding: 25px 30px;
 	border-radius: 8px;
@@ -22,7 +22,7 @@
 
 .user-input {
 	margin: 20px 0;
-	font-family: 'Heebo', sans-serif;
+	font-family: inherit;
 	font-weight: 200;
 	font-size: 13px;
 }
@@ -52,85 +52,18 @@ input {
 	border: 1px solid #d0d0d0;
 }
 
-/* Toggle */
-input[type=checkbox] {
-	height: 0;
-	width: 0;
-	visibility: hidden;
-  position: relative;
-}
-
-label {
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 40px;
-	height: 19px;
-	background: #a89fc2;
-	border-radius: 100px;
-	position: absolute;
-  top: 70%;
-  left: 73%;
-}
-
-label:after {
-	content: '';
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	width: 15px;
-	height: 15px;
-	background: #f7f7f7;
-	border-radius: 50%;
-	transition: 0.2s;
-}
-
-input:checked + label {
-	background: #796ba5;
-}
-
-input:checked + label:after {
-	left: calc(100% - 17px);
-}
-
-.dark-light-theme{
-	position: absolute;
+.icons-text {
+	position: fixed;
+	margin: 18px 0;
 	font-family: 'Heebo', sans-serif;
-	font-weight: 200;
-	font-size: 13px;
-	margin-left: 10px;
-	top: 70%;
+	font-weight: 100;
+	font-size: 12px;
 }
 
-.button {
-	position: absolute;
-	color: #fff;
-	top: 83%;
-	left: 10%;
-	height: 45px;
-	width: 80%;
-	border: none;
-}
-
-.button input {
-	border-radius: 5px;
-	border: 1px solid #353535;
-	height: 100%;
-	width: 100%;
+.footer {
+	position: relative;
+	left: 35%;
 	font-family: 'Heebo', sans-serif;
-	font-size: 13px;
-	letter-spacing: 1px;
-	font-weight: 400;
-	color: #353535;
-	cursor: pointer;
-	transition: 0.18s linear;
-}
-
-.button input:hover {
-	background-color: #9c8fc7;
-	color: #fff;
-	border: none;
-}
-
-.button input:active {
-  transform: scale(0.90);
+	font-weight: 100;
+	font-size: 8px;
 }
