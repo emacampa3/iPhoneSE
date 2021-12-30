@@ -41,7 +41,7 @@ const clockText = () => {
 setInterval(clockText, 1000)
 
 
-/* date text calendar */
+/* date text calendar for iPhone icon */
 const calendarWeek = document.getElementById('calendar-day-week'),
 	calendarDay = document.getElementById('calendar-day')
 
@@ -59,7 +59,7 @@ const clock = () => {
 setInterval(clock, 1000)
 
 
-/* two-way data binding (between form and iPhone) */
+/* two-way data binding (between the form and iPhone) */
 const createState = (state) => {
 	return new Proxy(state, {
 		set(target, property, value) {
