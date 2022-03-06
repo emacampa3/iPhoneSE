@@ -59,7 +59,7 @@ const clock = () => {
 setInterval(clock, 1000)
 */
 
-/* two-way data binding (between form and iPhone) */
+/* two-way data binding (between the form and iPhone) */
 const createState = (state) => {
 	return new Proxy(state, {
 		set(target, property, value) {
