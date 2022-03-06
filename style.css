@@ -636,7 +636,6 @@ input {
 	border: 1px solid #d0d0d0;
 }
 
-
 .footer {
 	position: relative;
 	left: 35%;
@@ -644,26 +643,4 @@ input {
 	font-family: 'Heebo', sans-serif;
 	font-weight: 100;
 	font-size: 8px;
-}
-
-@media screen and (max-width: 500px)  {
-  .container {
-    top: 20%;
-    left: 39%;
-    width: 60%;
-    transform: scale(0.7);
-    padding: 10px 15px;
-  }
-  .user-input {
-    margin: 10px 0;
-  }
-  input {
-	padding-left: 5px;
-	padding-top: 0px;
-}
-  .iphone-body {
-    top: -30%;
-    left: -15%;
-    transform: scale(0.5);
-  }
 }
