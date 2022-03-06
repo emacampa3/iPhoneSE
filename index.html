@@ -14,182 +14,90 @@
 
 	<!-- Form -->
 	<div class="container">
-		<div class="title">Customize the iPhone</div>
-			<div class="user-input"></div>
-
-				<div class="sender">From
-				<input id="name" type="text" name="name" data-model="name" maxlength="20" /></div>
-
-				<div class="message">Message
-				<input id="message" type="text" name="message" data-model="message" maxlength="40" /></div>
-
-			<span class="icons-text">Choose the icon you want to display</span>
-			<div class="main-container">
-
-				<div class="container-icons">
-					<div class="icon-container messages">
-						<div class="message-circle"></div>
-						<div class="message-triangle"></div>
-					</div>
-				</div>
-
-				<div class="container-icons">
-					<div class="icon-container mail">
-						<div class="mail-line1"></div>
-						<div class="mail-line2"></div>
-						<div class="inner upper"></div>
-						<div class="inner lower"></div>
-					</div>
-				</div>
-
-				<div class="container-icons">
-					<div class="icon-container calendar">
-							<span id="calendar-day-week"></span>
-							<span id="calendar-day"></span>
-					</div> 
-				</div>
-
-				<div class="container-icons">
-					<div class="icon-container messenger">
-						<div class="messenger-circle">
-							<div class="lightning">
-								<div class="line1"></div>
-								<div class="line2"></div>
-							</div>
-						</div>
-						<div class="messenger-triangle"></div>
-					</div>
-				</div>
-
-				<div class="container-icons">
-					<div class="icon-container facebook">
-						<div class="line"></div>
-					</div>
-				</div>
-				
-				<div class="container-icons">
-					<div class="icon-container instagram">
-						<div class="instagram-borderRectangle">
-							<div class="instagram-lens"></div>
-							<div class="instagram-flash"></div>
-						</div>
-					</div>
-				</div>
-
-				<div class="container-icons">
-					<div class="icon-container twitter">
-						<div class="twitter-icon"></div>
-					</div>
-				</div>
-
-				<div class="container-icons">
-					<div class="icon-container paypal">
-						<div class="letterCircle"></div>
-						<div class="letterRectangle"></div>
-					</div>
-				</div>
-
-			</div>
-			<div class="footer">Ema Campa &#169 2021 </div>
-		</div>
+		<div class="title">Customize the message:</div>
+		<div class="user-input"></div>
+		<div class="sender">From
+			<input id="name" type="text" name="name" data-model="name" maxlength="20" /></div>
+		<div class="message">Message
+			<input id="message" type="text" name="message" data-model="message" maxlength="40" /></div>
+		<div class="footer">Ema Campa &#169 2022 </div>
 	</div>
 
-	<!-- iPhone screen and body -->
-	<div class="iphone-body">
-
-			<div class="notification">
-					<div class="backdrop-notifications"></div>
-					<div data-binding="name" class="name"></div>
-					<div id="application-name-messages">MESSAGES</div>
-<!-- 			<div id="application-name-mail">MAIL</div>
-					<div id="application-name-calendar">CALENDAR</div>
-					<div id="application-name-messenger">MESSENGER</div>
-					<div id="application-name-facebook">FACEBOOK</div>
-					<div id="application-name-instagram">INSTAGRAM</div>
-					<div id="application-name-twitter">TWITTER</div>
-					<div id="application-name-paypal">PAYPAL</div> -->
-					<div data-binding="message"></div>
-					<div class="sent-time">now</div>
+	<!-- iPhone body -->
+	</div><div class="iphone-body">
+		<div class="notification">
+			<div class="backdrop-notifications"></div>
+			<div data-binding="name" class="name"></div>
+			<div id="application-name-messages">MESSAGES</div>
+			<div data-binding="message"></div>
+			<div class="sent-time">now</div>
+		</div>
+		<div class="notification-icon-position">
+			<div class="notification-icon-messages">
+				<div class="message-circle"></div>
+				<div class="message-triangle"></div>
 			</div>
-
-			<div class="notification-icon-position">
-
-					<div class="notification-icon-messages">
-							<div id="icon"></div>
-					</div>
+		</div>
+		<div class="shadow">
+			<div></div>
+		</div>
+		<div class="shade"></div>
+		<div class="notch">
+			<div class="speaker"></div>
+			<div class="camera">
+				<div class="glare"></div>
 			</div>
-			
-			<div class="shadow">
-					<div></div>
+		</div>
+		<div class="off-on-button">
+			<div></div>
+		</div>
+		<div class="upper-left-toggler">
+			<div></div>
+		</div>
+		<div class="upper-right-line"></div>
+		<div class="lower-left-line"></div>
+		<div class="lower-right-line"></div>
+		<div class="volume">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="sim">No SIM</div>
+		<div class="wifi"></div>
+		<div class="lock">
+			<div></div>
+			<div></div>
+		</div>
+		<div class="battery">
+			<div id="battery-percentage"></div>
+			<div>
+				<div></div>
+				<div></div>
 			</div>
-
-			<div class="shade"></div>
-			
-			<div class="notch">
-					<div class="speaker"></div>
-					<div class="camera">
-							<div class="glare"></div>
-					</div>
+		</div>
+		<div class="clock">
+			<div class="clock-text">
+				<div class="clock-text-hour" id="text-hour">...</div>
+				<div class="clock-text-minutes" id="text-minutes"></div>
 			</div>
-
-			<div class="off-on-button">
-					<div></div>
+			<div class="clock-date">
+				<span id="date-day-week"></span>
+				<span id="date-day"></span>
+				<span id="date-month"></span>
 			</div>
-
-			<div class="upper-left-toggler">
-					<div></div>
-			</div>
-			<div class="upper-right-line"></div>
-			<div class="lower-left-line"></div>
-			<div class="lower-right-line"></div>
-
-			<div class="volume">
-					<div></div>
-					<div></div>
-			</div>
-
-			<div class="sim">No SIM</div>
-			<div class="wifi"></div>
-			<div class="lock">
-					<div></div>
-					<div></div>
-			</div>
-
-			<div class="battery">
-					<div id="battery-percentage"></div>
-					<div>
-							<div></div>
-							<div></div>
-					</div>
-			</div>
-
-			<div class="clock">
-					<div class="clock-text">
-							<div class="clock-text-hour" id="text-hour">...</div>
-							<div class="clock-text-minutes" id="text-minutes"></div>
-					</div>
-
-					<div class="clock-date">
-							<span id="date-day-week"></span>
-							<span id="date-day"></span>
-							<span id="date-month"></span>
-					</div>
-				</div>
-
-			<div class="slide">Press Home to unlock</div>
+		</div>
+		<div class="slide">Press Home to unlock</div>
+		<div class="dot"></div>
+		<div class="camera-icon">
+			<div class="lens"></div>
+			<div class="button"></div>
 			<div class="dot"></div>
-			<div class="camera-icon">
-					<div class="lens"></div>
-					<div class="button"></div>
-					<div class="dot"></div>
+		</div>
+		<div class="lower-notch">
+			<div class="shade-lower"></div>
+			<div class="home">
+				<div></div>
 			</div>
-
-			<div class="lower-notch">
-					<div class="shade-lower"></div>
-					<div class="home">
-							<div></div>
-					</div>
-			</div>
+		</div>
 	</div>
     
   <script src="script.js"></script>
