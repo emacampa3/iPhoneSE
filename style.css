@@ -10,19 +10,12 @@ html {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-
 	width: 100%;
 	height: 100vh;
 }
 
 body {
-	display: flex;
 	background: linear-gradient(#e6e6e6, #334472cb);
-}
-
-.iphone-body {
-	display: flex;
-	flex-direction: row;
 }
 
 .iphone-body {
@@ -33,7 +26,8 @@ body {
 	left: 30%;
 	transform: translate(-50%, -50%);
 	border: 15px solid #000;
-	background-image: url('image/iphone-SE-2020-wallpaper-white-ispazio-wallpapers-central-idownloadblog.png');
+  background: #000;
+	background-image: url('https://wallpaperaccess.com/full/2639103.png');
 	background-repeat: no-repeat;
 	background-size: 280px 600px;
 	border-radius: 49px;
@@ -63,6 +57,7 @@ body {
 }
 
 .notch {
+  top: 0%;
 	width: 280px;
 	height: 60px;
 	background-color: #000;
@@ -334,7 +329,6 @@ body {
 	border-radius: 8px;
 }
 
-
 .notification .name {
 	position: absolute;
 	color: #212426;
@@ -343,9 +337,10 @@ body {
 	font-size: 12px;
 	top: 20px;
 	left: 7px;
+	white-space: nowrap;
 }
 
-.notification #application-name {
+.notification #application-name-messages {
 	position: absolute;
 	color: #45505c;
 	font-family: 'Heebo', sans-serif;
@@ -374,6 +369,42 @@ body {
 	font-size: 9px;
 	top: 8px;
 	left: 230px;
+}
+
+/* Messages Icon */
+.notification-icon-position {
+  top: 220px;
+  left: 14px;
+	margin: 0 2px;
+	width: 14px;
+	height: 14px;
+	border-radius: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	background: linear-gradient(#66ca3b 0%, #07bf38 100%);
+  position: relative;
+	cursor: pointer;
+}
+
+.message-circle {
+  position: absolute;
+  top: 3px;
+  left: 2px;
+  width: 10px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.message-triangle {
+  position: relative;
+  left: -4px;
+	top: -1px;
+  border-width: 2.5px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+  transform: rotateZ(38deg) scaleX(0.45) scaleY(0.8);
 }
 
 .battery {
@@ -442,6 +473,7 @@ battery-percentage {
 	top: 8px;
 	left: -62px;
 }
+
 .lock div:last-child {
 	width: 2px;
 	height: 2px;
@@ -551,29 +583,87 @@ battery-percentage {
 	left: 6px;
 }
 
-
-/* @media(max-width: 584px){
-	.container{
-		max-width: 100%;
-	}
-	form .user-details .input-box{
-		margin-bottom: 15px;
-		width: 100%;
-	}
-	form .category{
-		width: 100%;
-	}
-	.content form .user-details{
-		max-height: 300px;
-		overflow-y: scroll;
-	}
-	.user-details::-webkit-scrollbar{
-		width: 5px;
-	}
+/* Form */
+.container {
+	position: absolute;
+	top: 33%;
+	left: 55%;
+	width: 50%;
+  max-width: 250px;
+	height: 170px;
+	background-color: #F0F0F0;
+	padding: 25px 30px;
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.5);
 }
 
-@media(max-width: 459px){
-	.container .content .category{
-		flex-direction: column;
-	}
-} */
+.container .title {
+	font-family: 'Heebo', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	position: relative;
+}
+
+.user-input {
+	margin: 20px 0;
+	font-family: inherit;
+	font-weight: 200;
+	font-size: 13px;
+}
+
+.message {
+	margin-top: 10px;
+}
+
+.sender, .message {
+	font-family: 'Heebo', sans-serif;
+	font-size: 11px;
+	font-weight: 100;
+}
+
+input {
+	margin-top: 0;
+	height: 25px;
+	width: 94%;
+	border-radius: 5px;
+	font-family: 'Heebo', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	padding-left: 10px;
+	padding-top: 3px;
+	outline: none;
+	background-color: #f2f2f2;
+	border: 1px solid #d0d0d0;
+}
+
+
+.footer {
+	position: relative;
+	left: 35%;
+  top: 10%;
+	font-family: 'Heebo', sans-serif;
+	font-weight: 100;
+	font-size: 8px;
+}
+
+@media screen and (max-width: 500px)  {
+  .container {
+    top: 20%;
+    left: 39%;
+    width: 60%;
+    transform: scale(0.7);
+    padding: 10px 15px;
+  }
+  .user-input {
+    margin: 10px 0;
+  }
+  input {
+	padding-left: 5px;
+	padding-top: 0px;
+}
+  .iphone-body {
+    top: -30%;
+    left: -15%;
+    transform: scale(0.5);
+  }
+}
