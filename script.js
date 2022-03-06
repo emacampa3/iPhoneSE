@@ -41,7 +41,7 @@ const clockText = () => {
 setInterval(clockText, 1000)
 
 
-/* date text calendar */
+/* date text calendar
 const calendarWeek = document.getElementById('calendar-day-week'),
 	calendarDay = document.getElementById('calendar-day')
 
@@ -57,7 +57,7 @@ const clock = () => {
 	calendarDay.innerHTML = calDay
 }
 setInterval(clock, 1000)
-
+*/
 
 /* two-way data binding (between form and iPhone) */
 const createState = (state) => {
@@ -98,8 +98,7 @@ const render = () => {
 render();
 
 
-/* dark & light theme */
-/*
+/* dark & light theme
 const checkbox = document.querySelector('input[name=theme]');
 
 checkbox.addEventListener('change', function() {
@@ -117,4 +116,5 @@ let trans = () => {
 	window.setTimeout(() => {
 			document.documentElement.classList.remove('transition')
 	}, 10)
-}*/
+}
+*/
