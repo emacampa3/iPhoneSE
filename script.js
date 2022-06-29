@@ -1,4 +1,4 @@
-/* random battery percentage (between 60 and 90) */
+/* random battery percentage (between 60 and 90) {return Math.random() * (max - min) + min} */
 const batteryPercentage = document.querySelector('#battery-percentage').innerHTML = `${Math.floor(Math.random() * 29) + 70}%`
 
 /* clock and date text */
@@ -17,47 +17,23 @@ const clockText = () => {
 		dayweek = date.getDay(),
 		month = date.getMonth()
 
-	// Show a zero before hours
+	/* 	display zero before hours*/	
 	if(hh < 10) {hh = `0${hh}`}
-
-	// Show time
+	/* display time */
 	textHour.innerHTML = `${hh}:`
-	
-	// Show a zero before the minutes
+	/* display zero before hours */
 	if(mm < 10) {mm = `0${mm}`}
-	
-	// Show minutes
+	/* display minutes */
 	textMinutes.innerHTML = mm
 
-	// We get the months of the year and show it
 	let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 	let week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-
-	// We show the day, the month and the year
+	/* displaying day,  day of the week and month */
 	dateWeek.innerHTML = `${week[dayweek]},`
 	dateDay.innerHTML = day
 	dateMonth.innerHTML = `${months[month]}`
 }
 setInterval(clockText, 1000)
-
-
-/* date text calendar
-const calendarWeek = document.getElementById('calendar-day-week'),
-	calendarDay = document.getElementById('calendar-day')
-
-const clock = () => {
-	let date = new Date()
-
-	let calDay = date.getDate(),
-		calDayweek = date.getDay()
-
-	let calWeek = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
-
-	calendarWeek.innerHTML = `${calWeek[calDayweek]}`
-	calendarDay.innerHTML = calDay
-}
-setInterval(clock, 1000)
-*/
 
 /* two-way data binding (between the form and iPhone) */
 const createState = (state) => {
@@ -72,7 +48,7 @@ const createState = (state) => {
 
 const state = createState({
 	name: "Branko",
-	message: "I love you, baby",
+	message: "I love you!",
 });
 
 const listeners = document.querySelectorAll("[data-model]");
@@ -96,25 +72,3 @@ const render = () => {
 	});
 };
 render();
-
-
-/* dark & light theme
-const checkbox = document.querySelector('input[name=theme]');
-
-checkbox.addEventListener('change', function() {
-	if(this.checked) {
-			trans()
-			document.documentElement.setAttribute('data-theme', 'dark')
-	} else {
-			trans()
-			document.documentElement.setAttribute('data-theme', 'light')
-	}
-})
-
-let trans = () => {
-	document.documentElement.classList.add('transition');
-	window.setTimeout(() => {
-			document.documentElement.classList.remove('transition')
-	}, 10)
-}
-*/
